@@ -1,5 +1,4 @@
 # DICA33
-![](./dica_33.png)
 
 Antonio says (0.5.1)
 
@@ -7,6 +6,9 @@ Antonio says (0.5.1)
 
 > *very instable, but usable*
 ---
+
+![](./dica_33.png)
+
 Type: Low Pass Filter
 
 Size: 6 HP
