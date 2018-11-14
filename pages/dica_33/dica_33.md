@@ -8,7 +8,7 @@ Antonio says:
 
 > *very instable, but usable*
 
-![](C:\Users\Pat\Documents\GitHub\repo\nysthimanual\pages\dica_33\dica33.png)
+![](https://github.com/patman023/nysthimanual/tree/0.0.1/pages/dica_33/dica33.png)
 
 ---
 Type: Low Pass Filter
