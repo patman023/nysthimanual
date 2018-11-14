@@ -1,9 +1,7 @@
 # DICA33
-![](./dica33.jpg)
+![](./dica_33.png)
 
-Antonio says: 
-
-> *0.5.1*
+Antonio says (0.5.1)
 
 > *filter module...*
 
