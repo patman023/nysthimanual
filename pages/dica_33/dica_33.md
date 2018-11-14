@@ -7,9 +7,10 @@ Antonio says:
 > *filter module...*
 
 > *very instable, but usable*
----
-Pat says:
 
+![](C:\Users\Pat\Documents\GitHub\repo\nysthimanual\pages\dica_33\dica33.png)
+
+---
 Type: Low Pass Filter
 
 Size: 6 HP
