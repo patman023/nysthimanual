@@ -62,7 +62,7 @@ INDEX
 
 ---
 
-![](./squonk.jpg)
+![](./squonk.png)
 
 Size: 18 HP
 
