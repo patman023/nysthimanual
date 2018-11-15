@@ -1,11 +1,78 @@
-Squonk (6.30)
+# Squonk 
+
 Author: Jim Aikin
 
-Description
+INDEX
+1. [Antonio Says](squonk.md#antonio-says)
+2. [Description](squonk.md#description)
+3. [Features](squonk.md#features)
+4. [The Lower Area](squonk.md#the-lower-area) 
+5. [Chaining](squonk.md#chaining)  
+6. [Usage Suggestion](squonk.md#usage-suggestion)
+
+#### Antonio Says:
+
+	0.5.4
+		it's a PROGRAMMER, STAGE sequencer, Sampler TRIGGER, freely inspired to Serge TKB
+		is 12 steps with 11 lines of programming
+
+			line 1: TRIG IN: will select the stage triggered
+			line 2: STAGE: is the stage selector by button. when in sequencer mode the current step will light up
+			line 3: 5X: voltage multiplier for A B C D E channels
+			line 4: A: CV channel from 0 to 2 volts
+			line 5: B: CV channel from 0 to 2 volts
+			line 6: C: CV channel from 0 to 2 volts
+			line 7: D: CV channel from -1 to 1 volts
+			line 8: E: CV channel from -1 to 1 volts
+			line 9: MODE: TRIG mode; if bright yellow, CV and TRIG out, if dark yellow, only CV out, if black step is jumped
+			line 10: REP: if the sequencer is clocked will retrig the step from 1 to 8 times (subdivisions) (ratcheting)
+			line 11: TRIG OUT: single PULSE out when the stage is selected
+
+		SEL knob: will select the current stage
+		SEL CV input: selection of stage using CV (0 -> 10v)
+		CLK IN CLK OUT: to clock the sequencer (and output the same clock to other devices)
+		UP TRIG and BUTTON: if ON the sequence will go UP (normally is DOWN)
+		RND btn: if light up the next stage is randomized
+
+		OUTS A B C D E are the CV outs of the sequencer
+		ROT knob, from -5 to +5, is the number of steps the yellow channel will rotate jump and rotate  if in sequencer mode
+		LAST trig out: PULSE out when last step is reached
+		TRIG (global): current stage TRIG out (with repetitions if any)
+		
+		CHAIN A B C D E  and CHAIN TRIG are useful when chaining many SQUONKs (to have just one connection for the CV and TRIGs)
+
+		START STOP RESET: sequencer status controls by BUTTON or by TRIG
+		RANDOMIZE ALL: must be pressed with COMMAND KEY (too dangerous!)
+
+	0.5.6.0
+		BUG for last chained step not triggering
+		
+		BUG reset now set to the correct position
+		
+		the CV now is scaled 1/12 V (with modf) to track steps like a keyboard using CV (0.08333 VOLT steps)
+		
+	0.5.7.0
+		BUG: missing repetition first step if chained SOLVED
+		
+	0.5.13.0
+		added RED mode: end of sequence marker
+		
+	0.6.4
+		feature request: change color for the case ONLY CV : from dark yellow to BLUE
+
+---
+
+![](./squonk.jpg)
+
+Size: 18 HP
+
+Type: Sequencer
+
+## Description
 
 Squonk is a step sequencer. It has 12 steps, five CV outputs, a trigger input and output for each step, and other features. Two or more Squonk modules can be chained to create patterns longer than 12 steps.
 
-Features
+## Features
 
 Each of the 12 horizontal rows contains the input, output, and controls for a single step. Other features are in the lower area of the module.
 
@@ -19,7 +86,7 @@ There are four possible settings for each mode lamp: yellow, blue, red, and dark
 
 The rep (repeat) knob is active only when Squonk is receiving an external clock signal. The knob can be set to values from 1 to 8. This setting subdivides the trigger being sent to the corresponding output jack. If Squonk is being clocked in quarter-notes, for instance, the mode lamp is yellow, and the knob is set to 4, when that step is reached the trigger output will send four pulses at a sixteenth-note rate instead of a single pulse.
 
-The Lower Area
+## The Lower Area
 
 At the lower left are the inputs and controls for automating which step will be active. The clock (CLK) input does what you would expect: Each time a clock signal is received, Squonk will advance to the next step. the output jack immediately to the right of the clock input sends the clock signal on; this is useful when two or more Squonks are being chained. The UP jack and button switch Squonk from stepping downward to stepping upward in response to the clock signal. The RND (random) button, when active, causes Squonk to choose a next step at random.
 
@@ -39,7 +106,7 @@ In the row below the chain row are the start, stop, and reset trigger inputs. Re
 
 The randomize all jack turns Squonk into a machine with zero predictability. A trigger at this input is probably too extreme to be very useful musically, as the x5, mode, and repeat settings are all randomized along with the knobs. In version 6.30, the randomize all button (next to the jack) doesn't work.
 
-Chaining
+## Chaining
 
 When chaining two Squonks together for longer sequences, for convenience we'll call one the host and the other the client. The outputs of the host should be sent, as usual, to whatever devices (oscillators, envelope generators, etc.) are being sequenced. The outputs of the client module will be sent to the host's chain inputs. The connections are as follows:
 
@@ -49,7 +116,6 @@ Now here's the tricky part: Connect the LAST output of the host to the start inp
 
 By using the red (stop) mode button on the client -- or, for that matter, on the host -- you can control the length of the combined sequence.
 
-Usage Suggestion
+## Usage Suggestion
 
 Instead of using either the clock or the select CV input, try patching the various outputs of a clock divider to a number of the trigger inputs of various steps. (The SynthKit Shifting Clock Divider might be a good choice.) When multiple trigger inputs are receiving triggers, Squonk will choose the highest numbered step. Depending on the settings of the clock divider, complex sequence patterns can be achieved.
-
