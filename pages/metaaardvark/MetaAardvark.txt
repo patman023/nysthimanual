@@ -1,0 +1,164 @@
+metaAARDVARK
+
+Antonio sais:
+
+---- it's an attempt to obtain a super set of the RVG cell from the Warren Burt famous work "Aardvark IV"
+---- http://www.warrenburt.com/my-history-with-music-tech2/
+---- it's an LFO CLOCK S&H NOISE PULSE generator
+---- contains a simulated R-2R resistor network (a vintage DAC) with deviations due to resistors tolerances (between 0% to 20%)
+---- the deviations are recomputed every time the module is initialized or the DEV% param is changed
+---- the simulated R-2R is from 1 bit (2 values) to 10 bits (1024 values)
+---- values are subdivision of 10V
+--- the OUTPUTS ARE:
+---- STEPPED = (SAMPLED VALUE * INNER GAIN) + INNER OFFSET
+---- SMOOTHED = PORTAMENTO(STEPPED)
+---- PULSE = STEPPED > COMPARATOR ? PULSE OUT : NOTHING;
+------ PARAMETERS
+-------- SECTION 1: CLOCK OUT
+---------- PULSE TRAIN OUT
+---------- SQUARE OUT
+---------- RAMP UP OUT
+---------- RAMP DOWN OUT
+-------- SECTION 2: CLOCK HZ DISPLAYS
+---------- CLICK and DRAG display to set frequency of the pulse/sampler from 0.01Hz to 8kHz
+---------- Display for modulated Hz
+-------- SECTION 3: CLK IN
+---------- CLK IN overrides the inner clock, the CLK In is copied ot the CLOCK OUT to create a CHAIN of CLOCKED metaAARDVARK
+---------- CLK FM CV + CV VCA to modulta the inner CLOCK
+-------- SECTION 4: VOLTAGE OFFSET
+---------- CLICK and DRAG display to set VOLTAGE OFFSET from -15v to +15v
+---------- Display for modulated OFFSET
+---------- CV IN and VCA to modulate the OFFSET
+-------- SECTION 5: GAIN
+---------- CLICK and DRAG display to set GAIN from -2.0x to +2.0x
+---------- Display for modulated GAIN
+---------- CV IN and VCA to modulate the GAIN
+-------- SECTION 6: PORTAMENTO (the portamento act only on the SMOOTHED OUT)
+---------- CLICK and DRAG display to set PORTAMENTO from 0.0 to 1.0
+---------- CV IN and VCA to modulate the PORTAMENTO
+-------- SECTION 7: RESOLUTION
+---------- CLICK and DRAG display to set resolution from 1 bit to 10bits (from 2 to 1024 values)
+---------- CLICK and DRAG display to set the DEVIATION of resistors of the simulated DAC (from 0 % to 20% tolerance)
+-------- SECTION 8: OUT
+---------- STEPPED OUT the current value selected for the current resolution with OFFSET and GAIN
+---------- SMOOTHED OUT the current STEPPED OUT value filtered by PORTAMENTO
+---------- PULSE OUT uses a COMPARATOR (knob) settable from 0.01v to 9.99v;
+----------- when the selected value is higher than KNOB a PULSE is emitted
+
+
+===================================================================================================================================
+
+./MetaAardvark.png
+
+1) It's a Clock
+
+The top part is the Clock out (Section A)
+
+    From left to right
+    
+    Pulse out
+    Square out
+    Ramp Up out
+    Ramp Down out
+    
+    The Pulse out always emits 0.0001 seconds long pulses
+    
+    While you can set the frequency below (Section B) to audio rate, the resulting audio will be very aliased due to simple LFO (naive Antonio calls it),
+    so this is best used at LFO rates  and not an audio rate modulator
+   
+   
+Underneath that there are two digital displays, this is the clock frequency (red is internal clock, green is external clock) (Section B)
+   
+    The red one is a draggable display, the further left the cursor is clicked and dragged in the display, the faster it will adjust up or down.
+   
+    The green one shows either:
+   
+        If no external Clock signal is patched into Clock in (Section C)  the it shows the currently adjusted one (same as the draggable one)
+        If an external Clock signal is patched into Clock in (Section C) then it shows the currently detected frequency of pulses
+       
+
+Below that is the Clock in (Section C)
+
+	 Clock input to the left, and Clock FM CV input with attenuator
+	
+	
+
+2) It's a Voltage Offset device (Section D)
+
+	It can either:
+	
+	    Output a set voltage offset, configurable via the draggable display (red)
+	
+	    Output a CV controllable offset if the CV input at left with attenuator is patched ,tracked on green display
+	    
+	    
+3) It's a VCA for what is output (Section E)
+
+	This can either:
+	
+	  Output a set amount of Gain (-1 to +1) to apply to the outputs 
+	  
+	  Output a CV controllable amount of Gain via CV input at left with attenuator, tracked by the green display
+	  
+	  
+4) It can apply Portamento (from 0% to 100%) (Section F)
+
+    It affects the smooth output only and can be set either
+    
+      Set by clicking and dragging in the red display
+      
+      Controlled by CV via input jack at left with attenuator
+      
+      
+5) It is a Sample & Hold unit (Section G)
+
+     It can hold 1-10 bits (2 Values to 1024 values). The creator of the hardware version of this (linked above near top) asked Antonio to emulate the vintage DAC as faithfully as possible,
+     meaning it had to be able to also emulate the  up to 20% variability of the hardware, so here we have a variability of 0% to 20%, user settable. The default is 2% variability.
+     This means that if, for example, you set the network to 1 bit and variability to 2% then, if the varibilty deviates from the 2 possible values of (for this example) 0 V and 5V, with 20% the 0v could move between -1v to +1v and the 5v between 4v and 6v.
+     
+     The values are all draggable to set as wished
+     
+     
+6) The Outputs (Section H)
+
+	From left to right
+	
+	Stepped voltage output, which is sampled value +gain +offset and goes from 0v to 10v (the blue line on the scope)
+	
+    Pulse out with Comparator (the attenuator above the output going from 0.01v to 9.99v)
+     
+        Only if sampled voltage is higher than Comparator setting it outputs a pulse on this output
+        The Pulse out always emits 0.0001 seconds long pulses
+        
+    Smooth output is current stepped output voltage filtered by the Portamento setting (the pink line on the scope)
+    
+    
+================================================================================================================================
+
+Usage:
+
+*All red displays can be clicked and dragged up/down to set. The further left you click the faster it changes*
+
+- Use the Clock outputs (Section A) to modulate/trigger other modules
+
+- No Clock in patched in (Section C) uses the internal clock (settable in Section B via red display)) 
+	- To vary speed over time feed a slow sine LFO into the Clock FM CV input and attenuate to taste with the pod to it's left.
+	
+- External Clock patched in (Section C) overrides internal clock. Green display (Section B) tracks the incoming frequency
+	- To vary speed over time feed a slow sine LFO into the Clock FM CV input and attenuate to taste with the pod to it's left
+	- If your clock pulse is irregular this can make for some very unstable mess with all the Clock outs in Section A.
+	
+- Use the Stepped/Smooth/Pulse outs at bottom (Section H) to trigger stuff and generate pitch CV to feed your oscillators with. 
+     - Might need some attenuation/attenuvertion to tame the range/offset
+     - Play with the Comparator pod above the Pulse out to get the trigger outs you want
+     
+- Plug something into everything and see what happens ;)
+
+<Sample patch here <- 
+
+
+
+
+
+
+    
