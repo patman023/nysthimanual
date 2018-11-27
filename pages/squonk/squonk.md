@@ -4,7 +4,7 @@ Author: Jim Aikin
 
 INDEX
 1. [Antonio Says](squonk.md#antonio-says)
-2. [Description](squonk.md#description)
+2. [Basics](squonk.md#basics)
 3. [Features](squonk.md#features)
 4. [The Lower Area](squonk.md#the-lower-area) 
 5. [Chaining](squonk.md#chaining)  
@@ -61,6 +61,7 @@ INDEX
 		feature request: change color for the case ONLY CV : from dark yellow to BLUE
 
 ---
+## Basics
 
 ![](./squonk.png)
 
@@ -68,15 +69,15 @@ Size: 18 HP
 
 Type: Sequencer
 
-## Description
+Description: Squonk is a step sequencer. For each of the 12 steps, there are five channels of CV controls and a 5x voltage multiplier, a trigger input/output, ratcheting, and more. Multiple Squonk modules can also be chained to create patterns longer than 12 steps.
 
-Squonk is a step sequencer. It has 12 steps, five CV outputs, a trigger input and output for each step, and other features. Two or more Squonk modules can be chained to create patterns longer than 12 steps.
+---
 
 ## Features
 
-Each of the 12 horizontal rows contains the input, output, and controls for a single step. Other features are in the lower area of the module.
+Each of the 12 rows contains the input, output, and controls for a single step. Other features are in the lower area of the module.
 
-In the leftmost column are the trigger inputs. When a trigger is received at one of these jacks, Squonk will immediately jump to that step. Next to the trigger inputs are the stage lamps/buttons. Clicking on a stage button has the same result as sending a trigger to the triger input jack. The button for the currently active step is always lighted. (As in most step sequencers, only one step can be active at any given time.)
+In the leftmost column are the trigger inputs. When a trigger is received at one of these jacks, Squonk will immediately jump to that step. Next to the trigger inputs are the stage lamps/buttons. Clicking on a stage button has the same result as sending a trigger to the trigger input jack. The button for the currently active step is always lighted. (As in most step sequencers, only one step can be active at any given time.)
 
 The five knobs in the A, B, C, D, and E columns control the voltages that will be sent to the output jacks (also labeled A, B, C, D, and E) immediately below the columns. The knobs in columns A, B, and C have a range of 0 to +2 volts; columns D and E have a range from -1 to +1 volts. When the x5 button for a row is lighted (green), the output values are multiplied by 5. The knobs' outputs are not quantized to equal-tempered half-steps, so a quantizer module (or several of them) will be a useful accessory for processing Squonk's output.
 
@@ -86,11 +87,13 @@ There are four possible settings for each mode lamp: yellow, blue, red, and dark
 
 The rep (repeat) knob is active only when Squonk is receiving an external clock signal. The knob can be set to values from 1 to 8. This setting subdivides the trigger being sent to the corresponding output jack. If Squonk is being clocked in quarter-notes, for instance, the mode lamp is yellow, and the knob is set to 4, when that step is reached the trigger output will send four pulses at a sixteenth-note rate instead of a single pulse.
 
+---
+
 ## The Lower Area
 
 At the lower left are the inputs and controls for automating which step will be active. The clock (CLK) input does what you would expect: Each time a clock signal is received, Squonk will advance to the next step. the output jack immediately to the right of the clock input sends the clock signal on; this is useful when two or more Squonks are being chained. The UP jack and button switch Squonk from stepping downward to stepping upward in response to the clock signal. The RND (random) button, when active, causes Squonk to choose a next step at random.
 
-The SEL (select) knob can be used instead of a clock signal in order to manually select the active step. The CV input below the select knob automates this process. Sweeping the select CV input from an LFO is one possibility. If you're feeling perverse, you could use an input from a second step sequencer here. The input is unattenuated, and values from 0 to 1 volt are probably the most useful.
+The SEL (select) knob can be used instead of a clock signal in order to manually select the active step. The CV input below the select knob automates this process. This input is quantized to accept a V/Oct signal, and was originally conceived as a way of programming an odd scale to be played by a MIDI controller.
 
 The ROT (rotate) knob can be set to values from -3 to +3; the center value is 0. When the rotate value is non-zero, each time Squonk receives a clock signal it will rotate the mode settings (in the column above the knob) up or down. This is useful, obviously, only when the mode settings of the 12 steps are not all identical. If the rotate value is 1 (or if it's -1 and the UP button is active), the mode column will move at the same rate and in the same direction as the active step. As a result, there will never be a mode change for the active step. More complex patterns can be achieved with other settings.
 
@@ -104,7 +107,9 @@ The inputs in the CHAIN row are for chaining multiple Squonks.
 
 In the row below the chain row are the start, stop, and reset trigger inputs. Resetting sends Squonk to the 12th step (or to the first step, if the clock is set to UP mode), so that the next clock received will start the sequence at step 1 (or 12).
 
-The randomize all jack turns Squonk into a machine with zero predictability. A trigger at this input is probably too extreme to be very useful musically, as the x5, mode, and repeat settings are all randomized along with the knobs. In version 6.30, the randomize all button (next to the jack) doesn't work.
+The randomize all jack turns Squonk into a machine with zero predictability. A trigger at this input is probably too extreme to be very useful musically, as the x5, mode, and repeat settings are all randomized along with the knobs. For the button to work, you MUST hold down Ctrl (Mac Cmd), but a trigger to the jack does not need this.
+
+---
 
 ## Chaining
 
@@ -115,6 +120,8 @@ Connect the A, B, C, D, and E outputs of the client to the five corresponding ch
 Now here's the tricky part: Connect the LAST output of the host to the start input of the client, and also to the stop input of the host itself. In the same way, connect the LAST output of the client to its own stop input and to the start input of the host. These connections will cause the two modules to run alternately: When the host reaches its last step, it will stop itself and start the client, and vice versa.
 
 By using the red (stop) mode button on the client -- or, for that matter, on the host -- you can control the length of the combined sequence.
+
+---
 
 ## Usage Suggestion
 

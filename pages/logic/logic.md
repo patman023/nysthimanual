@@ -5,7 +5,7 @@ Index
 2. [Basics](logic.md#basics)
 3. [In Practice](logic.md#in-practice)
     - [NOT Gates](logic.md#not-gates)
-    - [AND, OR, & XOR Gates](logic.md#and---or------xor-gates)
+    - [AND, OR, & XOR Gates](logic.md#and-or--xor-gates)
 4. [Why?](logic.md#why--)
 
 
