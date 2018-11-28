@@ -2261,3 +2261,28 @@ and value is presented to the GLOBAL UNITY MIX ENV OUT output
 ---- global VCA out (simple vca connected to the unity mix envelopes)
 ---- global ENV OUT output of unity mix
 -------------------------------
+LOGAN
+	0.6.32
+---- CSV logger with 6 values
+---- the CSV is a Comma Separated Values file, that can be opened as spreadsheet
+---- first line of the output are the titles: TICKS, MSECS, + VALUES titles
+---- titles for single channels can be edited
+---- if AUTOSAVE is ON, a file name "logan1_DATE_SOMENUMBERS.csv" will be automatically saved in the RACK directory
+---- is AUTOSAVE is OFF a dialog will be presented
+---- SAVING starts tapping the START button (or triggering it)
+---- SAVING ends tapping the END button (or triggering it)
+---- a contextual menu will let you choose the granularity of the saving
+----- every sample, every 10 samples, every 100 samples, every 1000 samples, every 10000 samples
+---- if LOG on TRIG input is occupied, saves will happen every time a PULSE is received
+-------------------------------
+LOGAN20
+	0.6.32
+---- same as LOGAN but with 20 values
+---- to be more compatible with 4Hands
+-------------------------------
+02NAGOL
+0.6.32
+---- is a CSV file reader and player
+---- pressing START all the VALUES will be presented at the ports,
+with correct timing expressed by the column MSECS
+---- if the TRIG TO ADVANCE is active, the advance is triggered using PULSEs
