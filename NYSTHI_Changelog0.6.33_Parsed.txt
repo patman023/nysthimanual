@@ -1519,6 +1519,10 @@ Funny UNNYSTHIPLEASURESGRAPHER
 
 	0.6.31
 ---- add anticlick filter on MUTE/UNMUTE
+
+	0.6.33
+---- add POST outputs LEFT and RIGHT for single channel
+---- the POST outputs are activated via context menu
 -------------------------------
 BIGBUTTON
 	0.6.22
@@ -2222,6 +2226,9 @@ manuals are here http://www.apple-iigs.info/newdoc/sam.pdf
 ---- SPEED PITCH MOUTH THROAT are inner SAM controls, please refer to the manual
 ---- every variation for this paramenter will be rendered adter a stop and start
 (or at the end of a loop if looping)
+
+	0.6.33
+---- solved very stupid bug: I had the CV inputs for PITCH, MOUTH and THROAT commented out!
 -------------------------------
 ASR16/8/4
 	0.6.31
@@ -2281,8 +2288,21 @@ LOGAN20
 ---- to be more compatible with 4Hands
 -------------------------------
 02NAGOL
-0.6.32
+	0.6.32
 ---- is a CSV file reader and player
 ---- pressing START all the VALUES will be presented at the ports,
 with correct timing expressed by the column MSECS
 ---- if the TRIG TO ADVANCE is active, the advance is triggered using PULSEs
+
+	0.6.33
+---- improvements:
+---- the STOP is now STOP-CONTINUE
+---- added ONE SHOT MODE
+---- added TIME RATE
+------ the red display is draggable editable
+------ a CV can control the current time rate
+------ the CV is multiplied by the VCA
+------ the green display shows the REAL time rate applied to the NAGOL player
+------ the formula for a single step TIME is
+APPLIED TIME = TIME_OF_THE_STEP * clamp(TIME_RATE + ABS(CV) * 0.2 * VCA, 0.01, 999)
+---- added CV addressing a single CV can select one of the N steps of the NAGOL
