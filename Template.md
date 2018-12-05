@@ -1,6 +1,6 @@
 # Template/Styleguide for NYSTHI Manpages
 
-Intended for use in a monospace text editor such as Notepad++, not just copypasted off of the Github website. That way you don't strip the Markdown formatting or add extra HTML crap.
+Intended for use in a monospace text editor such as Notepad++. If you need to copypaste off of Github, click the "Raw" button just above and to the right of this section of the page. That way you don't strip the Markdown formatting or add extra HTML crap.
 
 	If a *, #, or ` looks out of place to you, but you're not well-versed in Github-Flavoured Markdown syntax, just leave it be ;-) 
 	-Pat
