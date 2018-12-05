@@ -82,6 +82,18 @@ Start writing again after
 
 ### Section C
 
+Useful Modules for testing:
+- aP-Modules HP Meter
+- Submarine Free EO-102 Envelope Oscilloscope
+- Submarine Free LA-108 Logic Analyzer
+- Fundamental Scope
+- TrowaSoft MultiScope
+- AS Triggers MkI 
+- Bogaudio Analyzer-XL
+- LOGinstruments Precise DC Gen
+- Computerscare Debug
+- Impromptu Clocked
+
 ### Section D
 
 (As many sections as make sense. You're not required to use 4!)
