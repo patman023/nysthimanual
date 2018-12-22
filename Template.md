@@ -1,14 +1,16 @@
 # Template/Styleguide for NYSTHI Manpages
 
-Intended for use in a monospace text editor such as Notepad++. If you need to copypaste off of Github, click the "Raw" button just above and to the right of this section of the page. That way you don't strip the Markdown formatting or add extra HTML crap.
+Intended for use in a monospace text editor such as Notepad++. If you need to copy/paste from the Github page, click the "Raw" button just above and to the right of this section of the page. That way you won't strip the Markdown formatting or add extra HTML crap.
 
-	If a *, #, or ` looks out of place to you, but you're not well-versed in Github-Flavoured Markdown syntax, just leave it be ;-) 
-	-Pat
-==========
+>If a *, #, or ` looks out of place to you, but you're not well-versed in Github-Flavoured Markdown syntax, just leave it be ;-)
 
-# (Name of Module)
+>—Pat
 
-Author: (Your Name(s); github handles are okay here, as are Proper Names and initials, ie. John D., J. Doe)
+---
+
+# [Name of Module]
+
+Author: [Your Name(s)] *[Github handles are okay here, as are Proper Names and initials, e.g. John D., J. Doe]*
 
 Last Updated: YYYY/MM/DD
 
@@ -30,12 +32,12 @@ Last Patch: 0.6.33
 
 ```
 	0.6.33
-COPY PASTE THE RELEVANT PATCHNOTES FROM THE LATEST PARSED CHANGELOG BETWEEN THE TICKMARKS
+COPY/PASTE THE RELEVANT PATCHNOTES FROM THE LATEST PARSED CHANGELOG BETWEEN THE TICK MARKS
 
 	0.666.antonio.works.way.too.fast
 If it looks wonky, try a
     nd clean up 
-------- extra spaces, 
+extra         spaces, 
 ------- tabs, and carriage returns.
 ```
 
@@ -43,13 +45,13 @@ If it looks wonky, try a
 
 ## Basics
 
-![](./moduleimage.png) (just "./theimagefile.name", saved in the same directory)
+`![](./moduleimage.png)` *[saved in the same directory.]*
 
-Type: VCA / PB&J Sandwich / ABCDE (Don't worry if you don't get every last usage case)
+Type: VCA / PB&J Sandwich / ABCDE *[Don't worry if you don't get every last usage case.]*
 
-Size: X HP (If you don't like squinting, use aP-Modules HP Meter :-D )
+Size: X HP *[If you don't like squinting, use aP-Modules HP Meter :-D ]*
 
-Modeled After/Inspired by: (If Antonio included references to hardware/software in the changelog, the module browser in Rack (like he did the Complex DAHD), or on a FB post, put those here! Same goes for requests from people for a module that does XYZ - Put their Name in here)
+Modeled After/Inspired by: *[If Antonio included references to hardware/software in the changelog, the module browser in Rack (like he did the Complex DAHD), or on a FB post, put those here. The same goes for requests from people for a module that does XYZ; put their name in here.]*
 
 ---
 
@@ -57,13 +59,13 @@ Modeled After/Inspired by: (If Antonio included references to hardware/software 
 
 ### Section A
 
-(in reference to the image - see MetaAardvark for a great example)
+*[The sections should be in reference to the image - see MetaAardvark for a great example.]*
 
-Try and describe what the control -does-, what voltage range a CV Input accepts, the kind of signal an output generates, etc. Usage has it's own section, so please try and limit things to specific controls here.
+Try and describe what the control **does**, what voltage range a CV Input accepts, the kind of signal an output generates, etc. Usage has its own section, so please try and limit descriptions to specific controls here.
 
-FUNCTION NAMES should be in ALLCAPS.
+FUNCTION NAMES should be in ALL CAPS.
 
-If you need to add a specification in a text block, try to be as clear as possible, ie. "-666.00 V to +666.00 V ***(Default: 0.00 V)*** ". If you can't fit the phrase inline, separate it out like these:
+If you need to add a specification in a text block, try to be as clear as possible, e.g. "-666.00 V to +666.00 V ***(Default: 0.00 V)*** ". If you can't fit the phrase inline, separate it out like these:
 
 ***Default Clock Rate: 10.00 Hz***
 
@@ -74,35 +76,47 @@ If you need to add a specification in a text block, try to be as clear as possib
 ### Section B
 
 If you need to write in point form:
-- Dash space start typing for your first level items
-  - space space dash space for your 2nd level
-- Don't add extra lines between list items
+- Type [dash], [space], then type your first-level items.
+  - [space] [space] [dash] [space] to start your second-level items.
+- Don't add extra lines between list items.
 
-Start writing again after
+Start writing normally again (no extra dashes and spaces, an extra ) once you have finished writing your list.
 
 ### Section C
 
-Useful Modules for testing:
-- aP-Modules HP Meter
-- Submarine Free EO-102 Envelope Oscilloscope
-- Submarine Free LA-108 Logic Analyzer
-- Fundamental Scope
-- TrowaSoft MultiScope
-- AS Triggers MkI 
-- Bogaudio Analyzer-XL
-- LOGinstruments Precise DC Gen
-- Computerscare Debug
-- Impromptu Clocked
+Useful modules for testing:
+
+- Visualizing Signals
+  - Fundamental Scope
+  - Gratrix Scope-G1
+  - Submarine Free EO-102 (Envelope Oscilloscope)
+  - Submarine Free LA-108 (Logic Analyzer)
+  - Bogaudio Analyzer-XL
+
+- Quantifying Signals/Knob Values
+  - Computerscare Debug
+  - alikins Hovered Value
+  - alikins Specific Value
+  
+- CV/Trigger Generation/Manipulation
+  - Submarine Free SS-221 (21 Output Voltage Sources)
+  - LOGinstruments Precise DC Gen
+  - ML Modules Sum8
+  - Impromptu Clocked
+  - AS Flow
+  
+- General
+  - aP-Modules HP Meter
 
 ### Section D
 
-(As many sections as make sense. You're not required to use 4!)
+*[As many sections as make sense. You're not required to use 4!]*
 
 ---
 
 ## Usage
 
-Describe how to -use- the module. 
+Describe how to **use** the module. 
 
 ---
 
@@ -110,6 +124,6 @@ Describe how to -use- the module.
 
 \[typethefullpatchname.vcv] \(\./typethefullpatchname.vcv) 
 
-- save the patch in the same folder. Please don't link to external services, as they're not owned by Microsoft (like Github), and who knows if/when they'll go down. 
+- Save the patch in the same folder. Please don't link to external services, since they're not owned by Microsoft (like Github), and who knows if/when they'll go down?
 
 If your patch isn't self-evident based on how you've described the module above, try and include some kind of basic write-up.
