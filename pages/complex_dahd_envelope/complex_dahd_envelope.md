@@ -87,11 +87,9 @@ DELAY, ATTACK, HOLD, AND DECAY (and their associated CV inputs), each control th
 
 ![Figure 2](Figure2.png)
 
-```
 While the more familiar ADSR (Attack Decay Sustain Release) envelope generator has a Sustain parameter which controls the segment's ***level***, note that all of the DAHD's main parameters control their respective segments' ***durations***.
 
 Additionally, the DELAY segment keeps the module at baseline voltage for a period after a trigger is received.
-```
 
 The LIN to EXP knob controls the shape of both the attack and decay slopes. When it's turned to the right, the attack slope will be convex and the decay slope concave (that is, exponential), which will make them seem quicker. When it's turned to the left, the slopes will be nearly linear. 
 
