@@ -22,7 +22,7 @@ Last Patch: 0.6.38
 
 ## Displays
 
-clip a pic of metaardvaark (no pre-rendered .svg files to play with)
+***WORK IN PROGRESS***
 
 ---
 
