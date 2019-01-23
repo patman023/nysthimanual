@@ -539,6 +539,10 @@ added RED mode: end of sequence marker
 
 	0.6.4
 feature request: change color for the case ONLY CV : from dark yellow to BLUE
+
+	0.6.37
+---- added selective RANDOMIZE for CV LINES A B C D E and REP (via contextual menu)
+
 -------------------------------
 SOU UTILS
 	0.5.6.0
@@ -682,6 +686,11 @@ ADD time multiplier, now the minimum speed is 0.1 cm/sec
 ---- ADD CV control for the disc speed
 ---- ADD VCA for the CV control for the disc speed
 ---- ADD DUAL Echo for STEREO outputs
+
+	0.6.37
+---- solve a crash on win
+---- corrected some timing when switching to slow mode
+
 -------------------------------
 DUALFEEDBACKECHO
 	0.5.11.0
@@ -1510,7 +1519,7 @@ Funny UNNYSTHIPLEASURESGRAPHER
 	0.6.19
 ---- waterfall freq display
 -------------------------------
-4/8/16MIX
+4MIX 8MIX 16MIX
 	0.6.19
 ---- first nysthi mixer... needed! for my experiments...
 ---- 4 channels with VOLUME, PEAK meters
@@ -1548,6 +1557,12 @@ Funny UNNYSTHIPLEASURESGRAPHER
 ---- add value display to CHANNEL VOLUME
 ---- add value display to MAIN VOLUME
 ---- add BIG VALUE display on DRAG for PAN and CHAN VOLUME and MAIN VOLUME
+
+	0.6.36
+---- bug: mute not visible if set when in SOLO with SOLO in another channel
+---- add special context menu command: "POST OUT won't SOLO"
+	when ON, the POST out will OUTPUT the signal also if there is a SOLO in other channels
+
 -------------------------------
 BIGBUTTON
 	0.6.22
@@ -1576,6 +1591,10 @@ BIGNUMBER
     (to count from 1 and not from 0)
 ---- via contextual menu it is possible to set the overflow
     (so you can set it as clock, for example, if the pulses are seconds)
+
+	0.6.38
+---- feature request: add RESET to the nex clock IN (uses the contextual menu)
+---- the dispaly will present the status
 -------------------------------
 -- OP or µOPERATOR
 	0.6.25
@@ -1807,6 +1826,16 @@ ENTER --> (stage added BIS, same note)
 
 	0.6.31
 ---- default duration to 1/16
+
+	0.6.38
+---- corrected some defaults whne right clicking on fields
+    defaults with right clicks are
+
+    NOTE : C2
+    CV2: 1.00
+    GATE: 25%
+    LENGHT:  1/16
+
 -------------------------------
 SL or µSLEW
 	0.6.26
@@ -1843,7 +1872,7 @@ WORMHOLIZER
 ----- TUNNELIZER (CV controllable) decrease/increase the density of the temporal events
 ----- DRYWETIZER set the control for the liver of the earth
 -------------------------------
-DISFUNCTIONALCONVOLVZILLA for brevity DISFUNCTIONACONVOLVZILLA
+CONVOLVZILLA
 	0.6.26
 ---- it's just a convolver
 ---- you can drag an drop any file AIF or AIFF or WAV of any bit size, long, int, short, char, float
@@ -1873,6 +1902,15 @@ removed setting to 4096 size blocks (always clicking...)
 
 	0.6.34
 ---- solved a crash when creating a new patch
+
+	0.6.36
+---- bug for duplicate symbol on WINDOWS
+
+	0.6.37
+---- DISFUNCTIONALCONVOLVZILLA is named now CONVOLVZILLA
+---- added EARLY REFLECTIONS with a DRY-WET MIX pot; EARLY REFLECTIONS are computed before entering PREDELAY stage
+---- added PREDELAY with DRY-WET MIX pot and a msecs Pt. Msecs are from 1 to 400, PREDELAY is computed before entering first ALL PASSES smoothers
+
 -------------------------------
 RATCHET
 	0.6.27
@@ -2070,6 +2108,10 @@ MAGISTER FUZZ
 	0.6.30
 ---- multithreaded
 ---- wrong params assinged to chan 2: corrected
+
+	0.6.37
+---- improved memory mode for low memory situation/pressure on win
+
 -------------------------------
 RODENT V2
 	0.6.28
@@ -2080,6 +2122,10 @@ RODENT V2
 
 	0.6.30
 ---- multithreaded
+
+	0.6.37
+---- improved memory mode for low memory situation/pressure on win
+
 -------------------------------
 SMASHMASTER
 	0.6.28
@@ -2090,6 +2136,9 @@ SMASHMASTER
 
 	0.6.30
 ---- multithreaded
+
+	0.6.37
+---- improved memory mode for low memory situation/pressure on win
 -------------------------------
 MONORECORDER
 	0.6.28
@@ -2105,6 +2154,9 @@ RXG100ChanA
 
 	0.6.30
 ---- multithreaded
+
+	0.6.37
+---- improved memory mode for low memory situation/pressure on win
 -------------------------------
 RXG100ChanB
 	0.6.28
@@ -2115,6 +2167,9 @@ RXG100ChanB
 
 	0.6.30
 ---- multithreaded
+
+	0.6.37
+---- improved memory mode for low memory situation/pressure on win
 -------------------------------
 CONFUSINGSIMPLER
 	0.6.23
@@ -2263,6 +2318,9 @@ manuals are here http://www.apple-iigs.info/newdoc/sam.pdf
 
 	0.6.33
 ---- solved very stupid bug: I had the CV inputs for PITCH, MOUTH and THROAT commented out!
+
+	0.6.36
+---- add an limit to the sample/voice rebuilder
 -------------------------------
 ASR16/8/4
 	0.6.31
@@ -2390,8 +2448,109 @@ when the ATTACK phase is finished
 time goes from 2 msecs to 10 secs
 ---- DECAY from 2 msecs to 10 secs, CV controllable
 
+	0.6.38
+---- solved  bug for an unstable situation receiving trigs at statup of a patch
+
 -------------------------------
 DUAL (208) RND (+DUAL INVERTER)
 	0.6.35
 ---- is a 2 section of 4 RANDOM uncorrelated values changed by the TRIG IN (+TAP)
 ---- mini section with DUAL INVERT signals (to invert the ENV, for example)
+
+-------------------------------
+DUAL DUAL LPG
+	0.6.38
+---- this is the continue of my 208 wanna be serie
+---- the code is all based on the
+---- http://research.spa.aalto.fi/publications/papers/dafx13-lpg/DAFx2013-LPG.pdf
+---- thanks to Julian Parker and Stefano D’Angelo !
+---- I have done classic optimitation to minimaze operations
+---- I've added also 3 Vactrol response models (activable using contextual menu)
+---- the 3 response are always a little variations, every new istance will be little bit different
+---- it's 2 times the section you have in the 208
+----
+---- PARAMETERS (for a single LPG)
+---- red knobs selector for only VCA mode, VCA + LP mode, only LP mode
+---- if in "only LP mode" there is the RESO knob that act on the signal
+---- for a real 208, the RESO should be full CCW (but I like to use it!)
+---- IN for the signal to be filtered (will come from complex VCO)
+---- OUT for the filtered signal to be sent to other modules
+---- the slider to the LEFT is the VCA for the incoming CV coming in from the BLACK socket
+---- the black socket is just under
+---- the slider on the right is the base level of action on the LPG
+
+-------------------------------
+TUNATHOR
+	0.6.38
+---- a tool to map voltages for shaky voltages situation
+---- is composed of 2 parts the CALIBRATOR and MAPPED QUANTIZER
+---- is better to use VCO in Sinusoid mode or Triangular mode
+---- supported frequencies are from 30Hz to 5000Hz
+---- the CALIBRATOR hear the incoming signal of the TARGET VCO and try to detect the frequency
+---- when pressing START CALIBRATION button is trying to map voltages to
+traversing from C1 to C7 octaves
+---- using contexual menu it's possible to set up mapping mode to OCTAVE or SEMITONE
+    (depends on the requested precision)
+
+---- parameters and commands:
+----
+---- CALIBRATOR SECTION
+---- CALIBRATION VOLTAGE OUT to be connected to the CV IN of the target VCO
+---- TARGET FREQ: when in CALIBRATION ACTIVE MODE presets the current target frequency
+---- CALIBRATION SIGNAL IN: the input for the target VCO freqeuncy detection
+---- DETECTED FREQ: is the dispaly for the detected frequency
+---- DEVIATION: when in CALIBRATION ACTIVE MODE displays the deviation from the searched frequency
+---- START CALIBRATION: is the button to start the CALIBRATION procedure
+----
+---- MAPPED PLAY MODE section
+---- MAP IS AVAILBLE light, will be ON if a MAP is available in memory
+---- IN VOLTAGE: incoming voltage to be mapped
+---- OUT VOLTAGE: mapped voltage to be used with CV in of the target VCO
+
+-------------------------------
+FIXED VOLTAGE SOURCE
+	0.6.38
+16 Fixed voltage source, text editable
+
+-------------------------------
+MULTIVOLTIMETRO
+	0.6.38
+---- 16 High precision voltmeters, 99999 counts
+---- can work also as PEAK detector using the contextual menu
+
+-------------------------------
+GRAPHIC METER
+	0.6.38
+---- 16 METERS to visualize voltages
+---- the contextual menu lets you set 1 volt, 10 volts, or 100 volts scale
+---- via contextual menu it's possible to set unipolar mode (only positive values are considered)
+---- via contextual menu it's possible to set abs mode (negative incoming values are multiplied by -1)
+
+-------------------------------
+name
+	ver
+
+
+-------------------------------
+name
+	ver
+-------------------------------
+name
+	ver
+-------------------------------
+name
+	ver
+-------------------------------
+name
+	ver
+-------------------------------
+name
+	ver
+-------------------------------
+name
+	ver
+
+-------------------------------
+GRAPHIC METER
+	0.6.38
+
