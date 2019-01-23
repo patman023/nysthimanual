@@ -12,7 +12,7 @@ Join our NYSTHI Manual team! https://www.facebook.com/groups/nysthimanual/
 
 alpha-ready pages: 
 
-- [BASICS!](pages/basics/basics.md)
+[BASICS!](pages/basics/basics.md)
 
 - [4DCB](pages/4dcb/4dcb.md)
 - [Complex DelayAttackHoldDecay](pages/complex_dahd/complex_dahd.md)

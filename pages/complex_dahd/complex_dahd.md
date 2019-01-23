@@ -1,7 +1,9 @@
 # Complex DAHD 
 
 Author: Jim Aikin (@midiguru23)
+
 Editor: Pat McIlveen (@patman023)
+
 Last Updated: 2018/12/22 (0.6.35)
 
 **INDEX**

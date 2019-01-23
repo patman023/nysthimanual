@@ -1,7 +1,11 @@
 # NYECHOecoeco
 
-Author: Santiago L. Peraza (FunkBlaster)
-Last Updated: 2019/01/11
+Author: Santiago L. Peraza (@Funk-Burasuta)
+
+Editor: Pat McIlveen (@patman023)
+
+Last Updated: 2019/01/23
+
 Last Patch: 0.6.37
 
 ---
