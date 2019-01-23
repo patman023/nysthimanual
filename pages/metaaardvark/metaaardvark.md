@@ -96,9 +96,9 @@ PARAMETERS
 
 ![](./MetaAardvark.png)
 
-Type: Clock  / LFO / S&H / Noise
+Type: Clock / LFO / S&H / Noise
 
-Size: 6 HP
+Size: 6 HP x 3U
 
 ---
 

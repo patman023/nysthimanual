@@ -411,6 +411,9 @@ removed the DUPLICATE command (via menu and via keyboard)
 
 	0.6.30
 ---- crash when moving from win to mac
+
+	0.6.34
+---- add a contextual menu to activate NEGATIVE CV for NEGATIVE frequencies
 -------------------------------
 - DICA 33
 	0.5.1
@@ -536,6 +539,10 @@ added RED mode: end of sequence marker
 
 	0.6.4
 feature request: change color for the case ONLY CV : from dark yellow to BLUE
+
+	0.6.37
+---- added selective RANDOMIZE for CV LINES A B C D E and REP (via contextual menu)
+
 -------------------------------
 SOU UTILS
 	0.5.6.0
@@ -679,6 +686,11 @@ ADD time multiplier, now the minimum speed is 0.1 cm/sec
 ---- ADD CV control for the disc speed
 ---- ADD VCA for the CV control for the disc speed
 ---- ADD DUAL Echo for STEREO outputs
+
+	0.6.37
+---- solve a crash on win
+---- corrected some timing when switching to slow mode
+
 -------------------------------
 DUALFEEDBACKECHO
 	0.5.11.0
@@ -847,6 +859,10 @@ octaves to +8 max (to improve a better mapping for midi mapped notes)
 
 	0.6.31
 ---- dealing with scala files with spurious chars at the end (\r )
+
+	0.6.34
+---- shorted names of scalas in the contextual menu
+---- support for voltage offset when in MIDIMAP mode
 -------------------------------
 XATTO TIME (4 delays)
 	0.5.13.0
@@ -912,6 +928,15 @@ corrected value skewing whne draggin and the screen is zoomed
 
 	0.6.20
 time computer sample rate update
+
+	0.6.34
+---- add DIVIDER explicit mode
+---- the DIVIDER mode is common for all 3 clock MULT/DIV ers
+---- the DIVIDER MODE is actived clicking on the "DIVIDER MODE" TAP button
+---- until now the division was done multiply for number less than 1.0, for example to divide by 2
+you had to multiply for 0.5000 or to have a divide by 3 you had to multiply by 0.3333
+now you can activate the DIVIDER mode and set 2.0 and 3.0
+---- renamed (visually) CLOCK MULT DIV
 -------------------------------
 8 ATTACK DECAY
 	0.6.0
@@ -979,6 +1004,9 @@ bump to performances
 
 	0.6.23
 octaves to +8 max (to improve a better mapping for midi mapped notes)
+
+	0.6.34
+---- support for voltage offset when in MIDIMAP mode
 -------------------------------
 DEEPNOTE
 	0.6.4
@@ -1491,7 +1519,7 @@ Funny UNNYSTHIPLEASURESGRAPHER
 	0.6.19
 ---- waterfall freq display
 -------------------------------
-4/8/16MIX
+4MIX 8MIX 16MIX
 	0.6.19
 ---- first nysthi mixer... needed! for my experiments...
 ---- 4 channels with VOLUME, PEAK meters
@@ -1519,6 +1547,22 @@ Funny UNNYSTHIPLEASURESGRAPHER
 
 	0.6.31
 ---- add anticlick filter on MUTE/UNMUTE
+
+	0.6.33
+---- add POST outputs LEFT and RIGHT for single channel
+---- the POST outputs are activated via context menu
+
+	0.6.34
+---- add value display to PAN
+---- add value display to CHANNEL VOLUME
+---- add value display to MAIN VOLUME
+---- add BIG VALUE display on DRAG for PAN and CHAN VOLUME and MAIN VOLUME
+
+	0.6.36
+---- bug: mute not visible if set when in SOLO with SOLO in another channel
+---- add special context menu command: "POST OUT won't SOLO"
+	when ON, the POST out will OUTPUT the signal also if there is a SOLO in other channels
+
 -------------------------------
 BIGBUTTON
 	0.6.22
@@ -1547,6 +1591,10 @@ BIGNUMBER
     (to count from 1 and not from 0)
 ---- via contextual menu it is possible to set the overflow
     (so you can set it as clock, for example, if the pulses are seconds)
+
+	0.6.38
+---- feature request: add RESET to the nex clock IN (uses the contextual menu)
+---- the dispaly will present the status
 -------------------------------
 -- OP or µOPERATOR
 	0.6.25
@@ -1778,6 +1826,16 @@ ENTER --> (stage added BIS, same note)
 
 	0.6.31
 ---- default duration to 1/16
+
+	0.6.38
+---- corrected some defaults whne right clicking on fields
+    defaults with right clicks are
+
+    NOTE : C2
+    CV2: 1.00
+    GATE: 25%
+    LENGHT:  1/16
+
 -------------------------------
 SL or µSLEW
 	0.6.26
@@ -1814,7 +1872,7 @@ WORMHOLIZER
 ----- TUNNELIZER (CV controllable) decrease/increase the density of the temporal events
 ----- DRYWETIZER set the control for the liver of the earth
 -------------------------------
-DISFUNCTIONALCONVOLVZILLA for brevity DISFUNCTIONACONVOLVZILLA
+CONVOLVZILLA
 	0.6.26
 ---- it's just a convolver
 ---- you can drag an drop any file AIF or AIFF or WAV of any bit size, long, int, short, char, float
@@ -1841,6 +1899,18 @@ removed setting to 4096 size blocks (always clicking...)
     halving the CPU use
 ---- FEATURE REQUEST: added organization in subDIRS: you can add one level of directories
 ---- HUGE improvement in Impulse Wave Drawing (moved all offscreen) (1000x times faster)
+
+	0.6.34
+---- solved a crash when creating a new patch
+
+	0.6.36
+---- bug for duplicate symbol on WINDOWS
+
+	0.6.37
+---- DISFUNCTIONALCONVOLVZILLA is named now CONVOLVZILLA
+---- added EARLY REFLECTIONS with a DRY-WET MIX pot; EARLY REFLECTIONS are computed before entering PREDELAY stage
+---- added PREDELAY with DRY-WET MIX pot and a msecs Pt. Msecs are from 1 to 400, PREDELAY is computed before entering first ALL PASSES smoothers
+
 -------------------------------
 RATCHET
 	0.6.27
@@ -1998,6 +2068,9 @@ JANNEKER
 ------ 0 1 2 3 4 5 6 7 8 9 are used to entering data
 -------- values for modes are:
 -------- PULSECOUNTmode from 1 to 9999
+
+	0.6.34
+---- changed pulse out time from 0.1 msecs to 1 msec
 -------------------------------
 JANNEKER TIMED
 	0.6.28
@@ -2021,6 +2094,9 @@ JANNEKER TIMED
 ---- increased time resolution now from 0.001 to 999.999 seconds
 ---- add time scale
 ---- some UI changes
+
+	0.6.34
+---- changed pulse out time from 0.1 msecs to 1 msec
 -------------------------------
 MAGISTER FUZZ
 	0.6.28
@@ -2032,6 +2108,10 @@ MAGISTER FUZZ
 	0.6.30
 ---- multithreaded
 ---- wrong params assinged to chan 2: corrected
+
+	0.6.37
+---- improved memory mode for low memory situation/pressure on win
+
 -------------------------------
 RODENT V2
 	0.6.28
@@ -2042,6 +2122,10 @@ RODENT V2
 
 	0.6.30
 ---- multithreaded
+
+	0.6.37
+---- improved memory mode for low memory situation/pressure on win
+
 -------------------------------
 SMASHMASTER
 	0.6.28
@@ -2052,6 +2136,9 @@ SMASHMASTER
 
 	0.6.30
 ---- multithreaded
+
+	0.6.37
+---- improved memory mode for low memory situation/pressure on win
 -------------------------------
 MONORECORDER
 	0.6.28
@@ -2067,6 +2154,9 @@ RXG100ChanA
 
 	0.6.30
 ---- multithreaded
+
+	0.6.37
+---- improved memory mode for low memory situation/pressure on win
 -------------------------------
 RXG100ChanB
 	0.6.28
@@ -2077,6 +2167,9 @@ RXG100ChanB
 
 	0.6.30
 ---- multithreaded
+
+	0.6.37
+---- improved memory mode for low memory situation/pressure on win
 -------------------------------
 CONFUSINGSIMPLER
 	0.6.23
@@ -2222,6 +2315,12 @@ manuals are here http://www.apple-iigs.info/newdoc/sam.pdf
 ---- SPEED PITCH MOUTH THROAT are inner SAM controls, please refer to the manual
 ---- every variation for this paramenter will be rendered adter a stop and start
 (or at the end of a loop if looping)
+
+	0.6.33
+---- solved very stupid bug: I had the CV inputs for PITCH, MOUTH and THROAT commented out!
+
+	0.6.36
+---- add an limit to the sample/voice rebuilder
 -------------------------------
 ASR16/8/4
 	0.6.31
@@ -2261,3 +2360,197 @@ and value is presented to the GLOBAL UNITY MIX ENV OUT output
 ---- global VCA out (simple vca connected to the unity mix envelopes)
 ---- global ENV OUT output of unity mix
 -------------------------------
+LOGAN
+	0.6.32
+---- CSV logger with 6 values
+---- the CSV is a Comma Separated Values file, that can be opened as spreadsheet
+---- first line of the output are the titles: TICKS, MSECS, + VALUES titles
+---- titles for single channels can be edited
+---- if AUTOSAVE is ON, a file name "logan1_DATE_SOMENUMBERS.csv" will be automatically saved in the RACK directory
+---- is AUTOSAVE is OFF a dialog will be presented
+---- SAVING starts tapping the START button (or triggering it)
+---- SAVING ends tapping the END button (or triggering it)
+---- a contextual menu will let you choose the granularity of the saving
+----- every sample, every 10 samples, every 100 samples, every 1000 samples, every 10000 samples
+---- if LOG on TRIG input is occupied, saves will happen every time a PULSE is received
+-------------------------------
+LOGAN20
+	0.6.32
+---- same as LOGAN but with 20 values
+---- to be more compatible with 4Hands
+-------------------------------
+02NAGOL
+	0.6.32
+---- is a CSV file reader and player
+---- pressing START all the VALUES will be presented at the ports,
+with correct timing expressed by the column MSECS
+---- if the TRIG TO ADVANCE is active, the advance is triggered using PULSEs
+
+	0.6.33
+---- improvements:
+---- the STOP is now STOP-CONTINUE
+---- added ONE SHOT MODE
+---- added TIME RATE
+------ the red display is draggable editable
+------ a CV can control the current time rate
+------ the CV is multiplied by the VCA
+------ the green display shows the REAL time rate applied to the NAGOL player
+------ the formula for a single step TIME is
+APPLIED TIME = TIME_OF_THE_STEP * clamp(TIME_RATE + ABS(CV) * 0.2 * VCA, 0.01, 999)
+---- added CV addressing a single CV can select one of the N steps of the NAGOL
+-------------------------------
+BOH!NGLER
+	0.6.34
+---- MAH !? Mistery module
+-------------------------------
+DUAL PULSER
+	0.6.34
+---- it's a copy of the 208 pulser, 2 times
+---- controls are simple
+---- parameters and views from TOP:
+---- TRIG IN (TAP) to start a PULSE (the pulse will be emitted at end of the timer
+---- SELF TRIG, if ON the PULSER will pulse itself at the end of the timer (enters in LOOP mode)
+---- CV VCA slider is the VCA for the CV (BLACK INPUT port): used to modify timing using CV coming in
+---- TIMER slider form 2 msecs to 10 seconds (exact replica of the curve and timing)
+---- BLACK input, is the CV in for the CV VAC left SLIDER
+---- LED and RED output, is the PULSE OUT at the end of the timer
+
+-------------------------------
+DUAL FIVE STEPS
+	0.6.34
+---- it's a copy of the 208 simple 5 steps sequencer, 2 times
+---- controls are simple
+---- parameters and views from TOP:
+---- Number of stage, with DRAG display (from 2 to 5 steps)
+---- RESET TAP and TRIG In (this is present in the original only using the external connector)
+---- the RESET can be assigned to the next clock coming in using the contextural menu
+---- the PULSEQ buttons are ON-OFF buttons. if ON that stage will emit a pulse when traversed
+---- the LEDs for the current stage played
+---- 5 slider 0v to 10v to set the stage voltage
+---- PULSE IN (+TAP) is the clock IN input
+---- PULSE OUT, is the PULSE OUT of the CURRENT STAGE, if the STAGE has the PULSEQ button ON
+---- CV OUT is the output CV for the current stage
+-------------------------------
+DUAL (208) ENVELOPE
+	0.6.35
+---- it's a copy of the 208 envelope, 2 times
+---- controls (from top):
+---- GATE/TRIG IN (+TAP) (is the PULSE IN to start the Envelope)
+is a GATE IN if in "sustained" mode and a TRIG IN if in "transient" mode""
+---- EndOFCycle Pulse OUT (+LED): a 1 msec PULSE is coming out every time the cycle is closed
+can be used to retrig the envelope to have an LFO/VCO
+---- SUST - TRANS radio button to setup the mode in sustained or transient
+---- ENV OUT is the output of the ENVELOPE (+ orange LED). Value goes from 0v to 10v
+---- sliders
+---- ATTACK from 2 msecs to 10 secs, CV controllable
+---- DURATION, only working if in transient mode, is the time the ENV stays to 10v
+when the ATTACK phase is finished
+time goes from 2 msecs to 10 secs
+---- DECAY from 2 msecs to 10 secs, CV controllable
+
+	0.6.38
+---- solved  bug for an unstable situation receiving trigs at statup of a patch
+
+-------------------------------
+DUAL (208) RND (+DUAL INVERTER)
+	0.6.35
+---- is a 2 section of 4 RANDOM uncorrelated values changed by the TRIG IN (+TAP)
+---- mini section with DUAL INVERT signals (to invert the ENV, for example)
+
+-------------------------------
+DUAL DUAL LPG
+	0.6.38
+---- this is the continue of my 208 wanna be serie
+---- the code is all based on the
+---- http://research.spa.aalto.fi/publications/papers/dafx13-lpg/DAFx2013-LPG.pdf
+---- thanks to Julian Parker and Stefano D’Angelo !
+---- I have done classic optimitation to minimaze operations
+---- I've added also 3 Vactrol response models (activable using contextual menu)
+---- the 3 response are always a little variations, every new istance will be little bit different
+---- it's 2 times the section you have in the 208
+----
+---- PARAMETERS (for a single LPG)
+---- red knobs selector for only VCA mode, VCA + LP mode, only LP mode
+---- if in "only LP mode" there is the RESO knob that act on the signal
+---- for a real 208, the RESO should be full CCW (but I like to use it!)
+---- IN for the signal to be filtered (will come from complex VCO)
+---- OUT for the filtered signal to be sent to other modules
+---- the slider to the LEFT is the VCA for the incoming CV coming in from the BLACK socket
+---- the black socket is just under
+---- the slider on the right is the base level of action on the LPG
+
+-------------------------------
+TUNATHOR
+	0.6.38
+---- a tool to map voltages for shaky voltages situation
+---- is composed of 2 parts the CALIBRATOR and MAPPED QUANTIZER
+---- is better to use VCO in Sinusoid mode or Triangular mode
+---- supported frequencies are from 30Hz to 5000Hz
+---- the CALIBRATOR hear the incoming signal of the TARGET VCO and try to detect the frequency
+---- when pressing START CALIBRATION button is trying to map voltages to
+traversing from C1 to C7 octaves
+---- using contexual menu it's possible to set up mapping mode to OCTAVE or SEMITONE
+    (depends on the requested precision)
+
+---- parameters and commands:
+----
+---- CALIBRATOR SECTION
+---- CALIBRATION VOLTAGE OUT to be connected to the CV IN of the target VCO
+---- TARGET FREQ: when in CALIBRATION ACTIVE MODE presets the current target frequency
+---- CALIBRATION SIGNAL IN: the input for the target VCO freqeuncy detection
+---- DETECTED FREQ: is the dispaly for the detected frequency
+---- DEVIATION: when in CALIBRATION ACTIVE MODE displays the deviation from the searched frequency
+---- START CALIBRATION: is the button to start the CALIBRATION procedure
+----
+---- MAPPED PLAY MODE section
+---- MAP IS AVAILBLE light, will be ON if a MAP is available in memory
+---- IN VOLTAGE: incoming voltage to be mapped
+---- OUT VOLTAGE: mapped voltage to be used with CV in of the target VCO
+
+-------------------------------
+FIXED VOLTAGE SOURCE
+	0.6.38
+16 Fixed voltage source, text editable
+
+-------------------------------
+MULTIVOLTIMETRO
+	0.6.38
+---- 16 High precision voltmeters, 99999 counts
+---- can work also as PEAK detector using the contextual menu
+
+-------------------------------
+GRAPHIC METER
+	0.6.38
+---- 16 METERS to visualize voltages
+---- the contextual menu lets you set 1 volt, 10 volts, or 100 volts scale
+---- via contextual menu it's possible to set unipolar mode (only positive values are considered)
+---- via contextual menu it's possible to set abs mode (negative incoming values are multiplied by -1)
+
+-------------------------------
+name
+	ver
+
+
+-------------------------------
+name
+	ver
+-------------------------------
+name
+	ver
+-------------------------------
+name
+	ver
+-------------------------------
+name
+	ver
+-------------------------------
+name
+	ver
+-------------------------------
+name
+	ver
+
+-------------------------------
+GRAPHIC METER
+	0.6.38
+
