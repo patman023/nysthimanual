@@ -16,7 +16,7 @@ Last Patch: 0.6.38
 
 ## Jacks
 
-![](./jacks1.png)
+![alt text](./jacks1.png)
 
 ---
 
