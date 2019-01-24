@@ -10,13 +10,15 @@ Last Patch: 0.6.38
 
 1. [Jacks](#jacks)
 2. [Displays](#displays)
-3. anything else we need
+3. anything else we need?
 
 ---
 
 ## Jacks
 
 ![alt text](./jacks1.png)
+
+![alt text](./inputoutput.png)
 
 ---
 
@@ -26,6 +28,6 @@ Last Patch: 0.6.38
 
 ---
 
-## anything else we need
+## anything else we need?
 
 
