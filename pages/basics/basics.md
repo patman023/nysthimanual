@@ -16,8 +16,6 @@ Last Patch: 0.6.38
 
 ## Jacks
 
-![alt text](./jacks1.png)
-
 ![alt text](./inputoutput.png)
 
 ---
