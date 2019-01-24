@@ -1,6 +1,6 @@
 # nysthimanual
 
-![alt text- this should be the big nysthi pic with all the modules](./allmodules20190119.png)
+![alttext](./0.6.38modules.png)
 
 Manual project for NYSTHI modules for VCV Rack! 
 
