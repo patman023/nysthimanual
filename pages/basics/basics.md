@@ -30,6 +30,8 @@ Gate: A Pulse Wave of +10 V with a variable duration. Think of a key on a keyboa
 
 Pulse/Trigger: A +10 V signal, typically with a duration of 1 ms (older modules with the 0.1 ms duration are being updated) 
 
+Sync: A special-purpose Trigger for the μ-series Sequencers.
+
 ---
 
 ## Displays
@@ -37,6 +39,8 @@ Pulse/Trigger: A +10 V signal, typically with a duration of 1 ms (older modules 
 ***WORK IN PROGRESS***
 
 ![Displays](./1displays.png)
+
+***screengrab the SQ2***
 
 ---
 
