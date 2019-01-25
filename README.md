@@ -6,7 +6,11 @@ Manual project for the [NYSTHI modules plugin](https://github.com/nysthi/nysthi)
 
 [Join our NYSTHI Manual team on Facebook!](https://www.facebook.com/groups/nysthimanual/)
 
-##### [THE NYSTHI BASICS!](pages/basics/basics.md)
+---
+
+## Directory
+
+[THE NYSTHI BASICS!](pages/basics/basics.md)
 
 | **Clocks** | **Filters** | **Boolean Logic** |
 |---|---|---|
