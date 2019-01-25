@@ -26,6 +26,9 @@ Last Patch: 0.6.38
 ---
 
 ## Antonio Says:
+<details>
+  <summary>Click to see the Changelog</summary>
+
 ```
 	0.5.10.0
 a virtual BINSON Echorec homage, with 6 play HEADS
@@ -66,6 +69,7 @@ ADD time multiplier, now the minimum speed is 0.1 cm/sec
 - corrected some timing when switching to slow mode
 
 ```
+</details>
 
 ---
 
