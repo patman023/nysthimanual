@@ -36,7 +36,7 @@ Pulse/Trigger: A +10 V signal, typically with a duration of 1 ms (older modules 
 
 ***WORK IN PROGRESS***
 
-![Displays](./displays.png)
+![Displays](./1displays.png)
 
 ---
 
