@@ -32,6 +32,7 @@ Both the Standard and Buchla variants are included.
 
 **Sync**: A special-purpose Trigger for the μ-series Sequencers.
 
+
 ---
 
 ## Displays
