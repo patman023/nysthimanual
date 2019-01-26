@@ -4,9 +4,9 @@ Author: Santiago L. Peraza (@Funk-Burasuta)
 
 Editor: Pat McIlveen (@patman023)
 
-Last Updated: 2019/01/23
+Last Updated: 2019/01/24
 
-Last Patch: 0.6.37
+Last Patch: 0.6.38
 
 ---
 
@@ -26,6 +26,9 @@ Last Patch: 0.6.37
 ---
 
 ## Antonio Says:
+<details>
+  <summary>Click to see the Changelog</summary>
+
 ```
 	0.5.10.0
 a virtual BINSON Echorec homage, with 6 play HEADS
@@ -66,12 +69,13 @@ ADD time multiplier, now the minimum speed is 0.1 cm/sec
 - corrected some timing when switching to slow mode
 
 ```
+</details>
 
 ---
 
 ## Basics
 
-![the module](./nyeco.png) ![the real thing, notice how its structure is exactly the same as the module](./echorec.jpg)
+![Image of NYEcho](./nyeco.png) | ![Image of Binson Echorec](./echorec.jpg)
 
 Type: Delay Effect / Looping / Hardware Model
 
@@ -83,7 +87,7 @@ Delay Range (Time x 0.1 Mode): 41 - 54899 ms
 
 - These times may be entirely blown out of the water with creative patching of Tap Tempo, but are outside the confines of this manual.
 
-Modeled After/Inspired by: BINSON Echorec (see above, right) ***ADD LINK TO WIKIPEDIA OR SOMETHING***
+Modeled After/Inspired by: BINSON Echorec ***ADD LINK TO WIKIPEDIA OR SOMETHING***
 
 Description: NYECHOecoeco is an effect module based on the most overengineered delay in the vintage world: the BINSON Echorec. 
 
@@ -95,7 +99,7 @@ The Echorec's's flexibility over each playhead/tap likely inspired the Intellije
 
 ## Functions by Section
 
-***IMAGE REQUIRED OUTLINING THE SECTIONS*** ![]()
+***SECTION BREAKOUT IMAGE REQUIRED*** ![SECTION BREAKOUT IMAGE]()
 
 ### Section A: The Teensy Tiny Speed Controls
 
@@ -106,6 +110,7 @@ The speed can also be modulated via the CV IN Jack (and it's attenuator), which 
 There is a Tap Tempo button you can click on to mark its tempo, like how most non-modular synthesizers do it. Additionally, there is an Input Jack to its right, which accepts both GATE and TRIG signals to sync the module to a clock.
 
 Finally, the TIME x 0.1 function slows the disk down to a crawl, which allows for much greater flexibility as a looping effect.
+
 
 ### Section B: The Spinning Reel and Heads.
 
@@ -125,7 +130,7 @@ The Reel itself can be clicked and held (but not dragged around as you would to 
 
 *The Reel will occasionally change from the standard "Green NYECHOecoeco" platter style to various 90's references (The Simpsons, Netscape Navigator, and a Vinyl Record, among others), Kurzgesagt-like objects (Ice-cream cone, another Vinyl Record made in this style, and more) and VCV module makers, such as Jeremy Wentworth (known in the Plugin Manager as JW-modules)*
 
-***DO WE INCLUDE A GUIDE ON REPLACING THESE IMAGES?***
+***SHOULD WE INCLUDE A GUIDE ON REPLACING THESE IMAGES?***
 
 
 ### Section C: Playhead Controls.
@@ -138,9 +143,10 @@ For each Playback Head, there is a:
 - VOLume control, which ranges from muting the Head, to boosting it louder than the dry signal. This affects both the TAP OUT and Global OUTPUT volumes for each Head.
 - TAP OUT/IN, working as a mono effects send-return for each HEAD. TAP OUT does not work as intended at the time of writing (patch 0.6.37).
 
-*** TAP OUT CURRENTLY WORKS, TAP IN DOES NOT, AND WHEN PATCHED WILL CAUSE THE CHANNEL TO FALL SILENT - FILE AN ISSUE WITH ANTONIO ON GITHUB***
+***TAP OUT CURRENTLY WORKS, TAP IN DOES NOT, AND WHEN PATCHED WILL CAUSE THE CHANNEL TO FALL SILENT - FILE AN ISSUE WITH ANTONIO ON GITHUB***
 
 The Erase Head has only a GATE input, which toggles the On/Off state for every GATE/TRIG sent through it.
+
 
 ### Section D: Mix
 
@@ -159,30 +165,33 @@ The standard INPUT and OUTPUT jacks are located here, along with 0 to 2.00x Gain
 
 This section also contains an [emulation of what is commonly known as a magic eye tube](https://audioexmachina.wordpress.com/the-audioexmachinas-echorec-bible/#magiceyes), which is a method for measuring incoming signals used in the mid-1960's instead of the more expensive VU meters. It consists of two opposing light sources (described as "wings") that display the signal's loudness, and when they overlap, it means signal clipping.
 
+![EM81 Magic Eye Tube](https://www.effectrode.com/wp-content/uploads/2018/07/em81_magic_eye_tube_animation.gif)
+
+Credit: [Effectrode Thermionic](https://www.effectrode.com/knowledge-base/the-magic-eye/)
+
 ---
 
 ## Usage
 
-Simply start by connecting an audio signal to the INPUT jack (described in [this](#section-e-signal-interface) section), and connecting the two outputs to your destination of choice.
+Simply start by connecting an audio signal to the [INPUT jack](#section-e-signal-interface) section), and connecting one or both OUTPUT jacks to your destination of choice.
 
-Following this, tap some of the PLAY HEAD buttons (shown in [this](#section-b-the-spinning-reel-and-its-playheads) section) to switch them on, in order to make the effect work. 
+Following this, tap some of the [PLAYHEAD buttons](#section-b-the-spinning-reel-and-its-playheads) to switch them on, in order to make the effect work. 
 
 *At this point, fundamental use of the module is covered in its entirety, and everything else from this point is optional.*
 
-Try to add swing to some of the HEADs by wiggling the small knobs next to them (mentioned in [this](#section-b-the-spinning-reel-and-its-playheads) section) until you find a rhythm you like.
+Try to add swing to some of the [PLAYHEADs](#section-b-the-spinning-reel-and-its-playheads) by wiggling the small knobs next to them until you find a rhythm you like.
 
-You can change the tempo of this rhythm by turning the SPEED knob (as talked about in [this](#section-a-the-teensy-tiny-speed-controls) section) until it matches a feeling you're looking for.
+You can change the tempo of this rhythm by turning the [SPEED knob](#section-a-the-teensy-tiny-speed-controls) until it matches a feeling you're looking for.
 
-Additionally, you could turn the DRY-WET knob (from [this](#section-d-the-msd-w-trio) section) to accent the first tap (also known as the dry signal) to make the effect sound muffled and atmospherical.
+Additionally, you could turn the [DRY-WET knob](#section-d--mix) to accent the first tap (also known as the dry signal) to make the repeats sound muffled and atmospheric.
 
-You can also subtly accentuate some of the HEADS by increasing or lowering their volumes, and send them to effects and return them back (which is all mentioned [here](#section-c-playhead-controls)).
+You can also subtly accentuate some of the PLAYHEADs by [changing their volumes](#section-c--playhead-controls), as well as sending individual signals to effects, and returning them back.
 
 To add a little mastering to the effect, in order to make the most out of the module, you can lower the INPUT and OUTPUT level knobs according to needs or to prevent clipping.
 
 ---
 
 ## Sample Patches
-
 
 ```
 coming soon :)
