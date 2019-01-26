@@ -12,13 +12,15 @@ Manual project for the [NYSTHI modules plugin](https://github.com/nysthi/nysthi)
 
 [THE NYSTHI BASICS!](pages/basics/basics.md)
 
-| **Clocks** | **Filters** | **Boolean Logic** |
-|---|---|---|
-| [MetaAardvark](pages/metaaardvark/metaaardvark.md) | [4DCB](pages/4dcb/4dcb.md) | [Logic](pages/logic/logic.md) |
-|  | [Dica 33](pages/dica_33/dica_33.md) |  |
+| **Clocks** | **Filters** | **Boolean Logic** | **Sequencers** |
+|---|---|---|---|
+| [MetaAardvark](pages/metaaardvark/metaaardvark.md) | [4DCB](pages/4dcb/4dcb.md) | [Logic](pages/logic/logic.md) | [Squonk](pages/squonk/squonk.md) |
+|  | [Dica 33](pages/dica_33/dica_33.md) |  |  |
 
-| **Sequencers** | **Envelopes** | **Delays** |
-|---|---|---|
-| [Squonk](pages/squonk/squonk.md) | [Complex DelayAttackHoldDecay](pages/complex_dahd/complex_dahd.md) | [NYECHOecoeco](pages/nyechoecoeco/nyechoecoeco.md) - Work In Progress |
+| **Envelopes** | **Delays** | **Utilities** |  |
+|---|---|---|---|
+| [Complex DelayAttackHoldDecay](pages/complex_dahd/complex_dahd.md) | [NYECHOecoeco](pages/nyechoecoeco/nyechoecoeco.md) - WIP | [BigNumber](pages/bignumber/bignumber.md) - WIP |  |
 
-Last updated 2019-01-24
+WIP = Work In Progress
+
+Last updated 2019-01-25 (0.6.38)

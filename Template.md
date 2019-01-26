@@ -28,7 +28,12 @@ Last Patch: 0.6.33
 4. [Usage](#usage)
 5. [Sample Patches](#sample-patches)
 
+---
+
 ## Antonio Says
+
+<details>
+  <summary>Click to see the Changelog</summary>
 
 ```
 	0.6.33
@@ -40,6 +45,8 @@ If it looks wonky, try a
 extra         spaces, 
 ------- tabs, and carriage returns.
 ```
+
+</details>
 
 ---
 
