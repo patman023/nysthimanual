@@ -17,9 +17,9 @@ Manual project for the [NYSTHI modules plugin](https://github.com/nysthi/nysthi)
 | [MetaAardvark](pages/metaaardvark/metaaardvark.md) | [4DCB](pages/4dcb/4dcb.md) | [Logic](pages/logic/logic.md) | [Squonk](pages/squonk/squonk.md) |
 |  | [Dica 33](pages/dica_33/dica_33.md) |  |  |
 
-| **Envelopes** | **Delays** | **Utilities** |  |
+| **Envelopes** | **Delays** | **Utilities** | **Blanks** |
 |---|---|---|---|
-| [Complex DelayAttackHoldDecay](pages/complex_dahd/complex_dahd.md) | [NYECHOecoeco](pages/nyechoecoeco/nyechoecoeco.md) - WIP | [BigNumber](pages/bignumber/bignumber.md) - WIP |  |
+| [Complex DelayAttackHoldDecay](pages/complex_dahd/complex_dahd.md) | [NYECHOecoeco](pages/nyechoecoeco/nyechoecoeco.md) - WIP | [BigNumber](pages/bignumber/bignumber.md) - WIP | [Nysthiometer](pages/nysthiometer/nysthiometer.md) |
 
 WIP = Work In Progress
 
