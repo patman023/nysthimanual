@@ -1,6 +1,6 @@
 # The NYSTHI Manual (Writing) Project!
 
-![alttext](./0.6.38modules.png)
+![alttext](./allmodules20190126.png)
 
 Manual project for the [NYSTHI modules plugin](https://github.com/nysthi/nysthi) in [VCV Rack](https://vcvrack.com/)! 
 
