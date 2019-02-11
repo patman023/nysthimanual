@@ -1,6 +1,6 @@
 # metaAARDVARK
 
-Author: Georg Carlson
+Author: Georg Carlson / @fractalgee
 
 **INDEX**
 1. [Antonio says](#antonio-says)
