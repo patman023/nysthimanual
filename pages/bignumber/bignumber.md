@@ -2,9 +2,9 @@
 
 Author: Pat McIlveen / @patman023
 
-Last Updated: 2019/01/25
+Last Updated: 2019/02/13
 
-Last Patch: 0.6.38
+Last Patch: 0.6.39
 
 **INDEX**
 
@@ -39,6 +39,10 @@ Last Patch: 0.6.38
 	0.6.38
 ---- feature request: add RESET to the nex clock IN (uses the contextual menu)
 ---- the dispaly will present the status
+
+	0.6.39
+feature request: added a contextual menu "PULSE IN DECREMENT MODE" (on - off)
+- now can go in DECREMENT mode
 
 ```
 
@@ -82,24 +86,23 @@ PULSE IN: Both a pushbutton and INPUT jack, which when receiving a signal will e
 
 #### COMMANDS
 
-Reset to the next CLOCK IN: This mode is used to counter a specific technical issue, where a RESET and PULSE IN are received within close succession of each other. Activate this mode if you do not see the desired digit appear when you hit reset.
+**Reset to the next CLOCK IN**: *(Default: Off)* This mode is used to counter a specific technical issue, where a RESET and PULSE IN are received within close succession of each other. Activate this mode if you do not see the desired digit appear when you hit reset.
+
+**PULSE IN DECREMENT MODE**: *(Default: Off)* Causes the counter to decrement (instead of increment) upon PULSE IN. Digits greater than the Overflow Digit are deactivated (including 0 when in Beat Count Mode).
 
 #### COUNT BEATS
 
-Beat Count Mode: If using the module to display a number of beats, or any situation where there is no "0th step", activate this mode. A RESET or Overflow will start the counter at 1 instead, and 0 will be shifted to the end of the counter (to enable the display of numbers like "10" when chained).
+**Beat Count Mode**: *(Default: Off)* If using the module to display a number of beats, or any situation where there is no "0th step", activate this mode. A RESET or Overflow will start the counter at 1 instead, and 0 will be shifted to the end of the counter (to enable the display of numbers like "10" when chained).
 
 #### OVERFLOW
 
-Overflow on \[Digit\]: When the counter reaches the specified digit, it arms the [O-F OUTPUT](#section-c--pulse-train). When the next Pulse is received at PULSE IN, the O-F OUTPUT will fire a Pulse, and the counter will reset based on what other options are selected.
-
-***WORK IN PROGRESS***
-***WILL CHANGE ON RELEASE OF 0.6.39***
+**Overflow on \[Digit\]**: *(Default: 9)* When the counter reaches the specified digit, it arms the [O-F OUTPUT](#section-c--pulse-train). When the next Pulse is received at PULSE IN, the O-F OUTPUT will fire a Pulse, and the counter will reset based on what other options are selected.
 
 ---
 
 ## Usage
 
-
+**Work in Progress**
 
 ---
 

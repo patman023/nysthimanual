@@ -23,4 +23,4 @@ Manual project for the [NYSTHI modules plugin](https://github.com/nysthi/nysthi)
 
 WIP = Work In Progress
 
-Last updated 2019-01-25 (0.6.38)
+Last updated 2019-02-13 (0.6.39)
