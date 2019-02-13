@@ -18,5 +18,5 @@ Type: Blank / Utility?
 
 Size: 1HP x 3U
 
-This 1HP Blank module is just a fun little gadget whose meter corresponds to the amount of NYSTHI in your patch ;-)
+This 1HP Blank module is a fun little gadget whose meter corresponds to the amount of HP occupied by NYSTHI in your patch ;-)
 
