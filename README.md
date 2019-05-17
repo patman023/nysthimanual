@@ -21,4 +21,10 @@ Manual project for the [NYSTHI modules plugin](https://github.com/nysthi/nysthi)
 |---|---|---|
 | [Squonk](pages/squonk/squonk.md) | [Complex DelayAttackHoldDecay](pages/complex_dahd/complex_dahd.md) | [NYECHOecoeco](pages/nyechoecoeco/nyechoecoeco.md) - Work In Progress |
 
-Last updated 2019-01-24
+---
+
+#### Here's the changelog organized on a per-module basis: [v0.6.42 organized changelog](./changelog0.6.42_parsed.txt)
+
+#### Search the module name (Control-F) for a basic rundown of features!
+
+Last updated 2019-05-17
