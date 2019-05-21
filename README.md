@@ -21,6 +21,9 @@ Manual project for the [NYSTHI modules plugin](https://github.com/nysthi/nysthi)
 |---|---|---|
 | [Squonk](pages/squonk/squonk.md) | [Complex DelayAttackHoldDecay](pages/complex_dahd/complex_dahd.md) | [NYECHOecoeco](pages/nyechoecoeco/nyechoecoeco.md) - Work In Progress |
 
+Adi Quinn's winning BOH!NGLER Manual (as judged by the VCV Rack Official User Group on Facebook:
+https://www.dropbox.com/sh/p2qpsetlogyrgrg/AABscyee4Tu6VQD9W0pL_PIua/BOHINGLER_manual.pdf?dl=0
+
 ---
 
 #### Here's the changelog organized on a per-module basis: [v0.6.42 organized changelog](./changelog0.6.42_parsed.txt)
