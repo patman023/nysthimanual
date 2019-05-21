@@ -25,9 +25,11 @@ Adi Quinn's winning **BOH!NGLER** Manual (as judged by the VCV Rack Official Use
 https://www.dropbox.com/sh/p2qpsetlogyrgrg/AABscyee4Tu6VQD9W0pL_PIua/BOHINGLER_manual.pdf?dl=0
 
 ---
+## Changelog
+Here's the changelog organized on a per-module basis: 
 
-#### Here's the changelog organized on a per-module basis: [v0.6.42 organized changelog](./changelog0.6.42_parsed.txt)
+**[v0.6.42 organized changelog](./changelog0.6.42_parsed.txt)**
 
-#### Search the module name (Control-F) for a basic rundown of features!
+Search the module name (Control-F) for a basic rundown of features!
 
 Last updated 2019-05-17
