@@ -10,6 +10,7 @@ streamlined version, and color codes... (white sockets, inputs, black sockets, o
 becomes perfect to do all thing related to GATES :D
 
 -------------------------------
+
 # MVERB
 	0.4.0
 a VCV RACK port of the mverb (https://github.com/martineastwood/mverb)
@@ -19,7 +20,9 @@ now is 1 to 1 equivalent to the mVerb
 
 	0.5.1
 bug: nasty crash on low memory. RESOLVED
+
 -------------------------------
+
 # TWISTEDMVERB
 	0.4.0
 another mutation, of the MVERB with 8 delay lines and 4 allpass added 
@@ -27,12 +30,14 @@ another mutation, of the MVERB with 8 delay lines and 4 allpass added
 
 	0.4.0B
 removed clear during room resize
+
 -------------------------------
 # HI-VERB
 	0.4.0
 a mutation of the MVERB using HIPASS filtering
 0.4.0b
 removed clear during room resize
+
 -------------------------------
 # MODEL277
 	0.4.0
@@ -47,6 +52,7 @@ solved a bug on feeback paths 3 and 4
 
 	0.6.2
 protect from init to time ZERO
+
 -------------------------------
 # NYSTEREOPHASER
 	0.4.0b
@@ -65,6 +71,7 @@ add BYPASS and BYPASS with TRIG to
 
 0.6.10
 optimizations: speed up internal calculations (around 45% better)
+
 -------------------------------
 # SURVEILLANCE
 	0.4.0C
@@ -75,6 +82,7 @@ all the outs are controlled by attuenverters
 added switch to have 2 ranges 
 	A) from -5v to +5v
 	B) from 0v to +10v
+	
 -------------------------------
 # NYENVFOLLOWER
 	0.4.0D
@@ -101,11 +109,13 @@ tweaks: changed some internal time to get more flat envelopes
 	0.5.6.0
 SCALE from -5 to +5
 OFFSET from -10 to +10
+
 -------------------------------
 # DUALSIGNALDELAYER (aks 2D)
 	0.4.0d
 dual delay from 0 to 2000 msecs
 both delays are CV controllable
+
 -------------------------------
 # NYSTEREOCHORUS
 	0.4.0d
@@ -120,6 +130,7 @@ ADDED A DCBLOCK filter
 
 	0.6.11
 Optimizations
+
 -------------------------------
 # LFOMULTIPHASE
 0.4.0e
@@ -166,6 +177,7 @@ added VCA to control in CV for the FREE PHASE
 
 	0.6.20
 time computer sample rate update
+
 -------------------------------
 # MASTER RECORDER
 	0.4.7
@@ -244,6 +256,7 @@ changed visualizaton curves
 
 	0.6.19
 changed curves to present from -30 dB on
+
 -------------------------------
 # complex DAHD Envelope (DelayAttackHoldDecay Envelope)
 	0.4.10
@@ -286,6 +299,7 @@ an envelope with 2 stage with delays
 
 	0.5.12.0
 - added envelope chain IN, to have complex chained envelopes
+
 -------------------------------
 # AD Envelope (AttackDecay Envelope)
 	0.4.10
@@ -303,6 +317,7 @@ A standard Envelope with some 281 features
 	EOC (End of Cycle) out: triggers out when the Envelope reach the stable phase
 	ENV LEVEL LED: metering the signal
 	ENV OUT: the signal to be used
+	
 -------------------------------
 # COMPLEXSIMPLER (the NYSTHIATOR fortunate son)
 	0.4.11
@@ -431,11 +446,13 @@ removed the DUPLICATE command (via menu and via keyboard)
 
 	0.6.34
 ---- add a contextual menu to activate NEGATIVE CV for NEGATIVE frequencies
+
 -------------------------------
 # DICA 33
 	0.5.1
 filter module...
 -- very instable, but usable
+
 -------------------------------
 # HOT TUNA
 	0.5.2.1
@@ -466,6 +483,7 @@ Improved visibility of the screen (frequency is fully visible) (feature request)
 
 	0.6.39
 added a "bobin" filter to the needle (more smooth)
+
 -------------------------------
 # SOYMODELSOU
 	0.5.4
@@ -512,6 +530,7 @@ BUG: the SRV SKEW function was overflowing if modulated
 ------ the smoothing function is up a level decided by the probability setting
 
 ---- ADD a section with 3 FLIP-FLOPs for more GATING divertimento
+
 -------------------------------
 # SQUONK
 	0.5.4
@@ -598,6 +617,7 @@ FEATURE REQUEST: the OFFSETTER will output a fixed or modulated voltage without 
 	0.6.0.0
 add overflow to both ASR
 ---- ASR 2 is clocked by ASR 1 in CLOCK if no clock in ASR2 clock in
+
 -------------------------------
 # VECTOR MIXER
 	0.5.7.0
@@ -639,6 +659,7 @@ feature request: is stereo now (or can be used as 2 channels)
 added X and Y output to use it as automated CV controller
 ------ X and Y outputs can be UNIPOLAR ( UNI button ON) or BIPOLAR (UNI button OFF)
 ------ X and Y outputs can be in 1Vpp or 10Vpp range (10x button ON 10Vpp) (10x button OFF 1Vpp)
+
 -------------------------------
 # QUAD PANNER
 	0.5.8.0
@@ -675,6 +696,7 @@ emulation of the 4 rates 4 levels DX7 operator envelope
 
 	0.6.20
 missing initialization of inner var
+
 -------------------------------
 # NYECHOECOECO
 	0.5.10.0
@@ -739,6 +761,7 @@ ADD time multiplier, now the minimum speed is 0.1 cm/sec
 ---- You can drive also with a VCO in input (or an LFO, of course)
 ---- FEEDBACK is amount of the ECHO that is summed back to top of the CHAIN
 ---  OUT is the OUT...
+
 -------------------------------
 # SINGLE METER
 	0.5.12.0
@@ -752,6 +775,7 @@ changed visualizaton curves
 
 	0.6.19
 changed curves to present from -30 dB on
+
 -------------------------------
 # 4DCB
 	0.5.12.0
@@ -763,6 +787,7 @@ it is possible to set the HP frequency from PRESETs in the contextual menu (5, 1
 
 	0.6.2
 solved a crosstalk bug (some cleaning for the 4 dc filters!)
+
 -------------------------------
 # TIMEX
 	0.5.12.0
@@ -823,6 +848,7 @@ balance between incoming signal and the reflections
 
 	0.6.0
 corrected a nasty bug that was crashing RACK reopening a patch
+
 -------------------------------
 # DISSONANTVERB
 ---- it's a modification of the PLATEVERB inserting 2 pitchshifter in the feedback loop
@@ -836,6 +862,7 @@ corrected a nasty bug that was crashing RACK reopening a patch
 
 	0.6.0
 corrected a nasty bug that was crashing RACK reopening a patch
+
 -------------------------------
 # SCALA QUANTIZER
 	0.5.13.0
@@ -903,6 +930,7 @@ octaves to +8 max (to improve a better mapping for midi mapped notes)
 	0.6.34
 ---- shorted names of scalas in the contextual menu
 ---- support for voltage offset when in MIDIMAP mode
+
 -------------------------------
 # XATTO TIME (4 delays)
 	0.5.13.0
@@ -923,6 +951,7 @@ corrected value skewing whne draggin and the screen is zoomed
 
 	0.6.20
 time computer sample rate update
+
 -------------------------------
 # CONST ADD MULT
 	0.6.0
@@ -946,6 +975,7 @@ add DIVISION out
 	0.6.31
 ---- add DO OPERATION on PULSE (4 channels)
 ---- if the PULSE is active (connected) the operation is executed only on PULSE IN
+
 -------------------------------
 # CLOCK MULTIPLIER
 	0.6.0
@@ -1004,7 +1034,7 @@ now you can activate the DIVIDER mode and set 2.0 and 3.0
 ---- Envelope signal OUT
 ---- Led signal out
 ---- UNITY MIX button (if ON, the EG value will be summed and presented to the total OUT)
-----
+
 ---- GLOBAL CONTROLS :
 ---- ATTACK for all 8  + CV IN for all 8
 ---- DECAY for all 8  + CV IN for all 8
@@ -1013,6 +1043,7 @@ now you can activate the DIVIDER mode and set 2.0 and 3.0
 ---- VCA IN global
 ---- VCA OUT global
 ---- UNITY MIXER OUTPUT
+
 -------------------------------
 # QUAD SIMPLER SLICER QUANTIZER
 	0.6.1
@@ -1020,12 +1051,14 @@ now you can activate the DIVIDER mode and set 2.0 and 3.0
 ---- 10v is divided from 1 to 99 slices, and IN VOLTAGE is quantized to the closest
 ---- perfect to use with simpler: load a LOOP and set to 16 or 8 slices
 ---- user SOU as Voltage source
+
 -------------------------------
 # SPECTRAL
 	0.6.2
 ---- a real time spectrograph wanna be,
 ---- is using very very little of CPU
 ---- explore different visualizations and windowing functions using the contextual menu
+
 -------------------------------
 # EQUAL DIVISION QUANTIZER
 	0.6.3
@@ -1080,6 +1113,7 @@ octaves to +8 max (to improve a better mapping for midi mapped notes)
 	0.6.31
 ---- add CV to control TIME: formula is: abs(incoming VOLTAGE) * 10 (min 0.001 max 999. secs)
 ---- add CV to control FREQ1 FREQ2 FREQ3 FREQ4: formula is: abs(incoming VOLTAGE) * 10 (min 0.001 max 100.00 Hz)
+
 -------------------------------
 # MASTER RECORDER 2
 	0.6.6
@@ -1163,6 +1197,7 @@ will be used next recording time.
 ---------- traveled distance by the moving sound source
 ---------- distance of the source from the listener
 ---------- relative speed "moving sound source - listener"
+
 -------------------------------
 # PHASOR (Harmonic VCO)
 	0.6.8
@@ -1257,6 +1292,7 @@ BUG: don't try to update time for an empty set of KFs
 CV IN for octave was accidentally disconnected!
 ---- OCTAVE now from -5 to +5
 ---- added a VCA to OCTAVE CV modulation
+
 -------------------------------
 # STEREOPHASER2
 	0.6.10
@@ -1264,6 +1300,7 @@ CV IN for octave was accidentally disconnected!
 
 	0.6.26
 added DRY-WET parameter
+
 -------------------------------
 # SLIM METER (1HP)
 	0.6.11
@@ -1272,6 +1309,7 @@ added DRY-WET parameter
 
 	0.6.19
 changed curves to present from -30 dB on
+
 -------------------------------
 # FLIPPER (trigger and flip flop device)
 	0.6.11
@@ -1286,6 +1324,7 @@ changed curves to present from -30 dB on
 ------ TRIG IN
 ------ TAP to TRIG
 ------ TRIG OUT: an immediate copy of the TRIG IN or TAP is sent as TRIG OUT
+
 -------------------------------
 STEREOCHORUS-TREMOLO
 	0.6.11
@@ -1305,6 +1344,7 @@ STEREOCHORUS-TREMOLO
 ------ BOOST, is a gain stage to pump up after some phase cancellation
 ------ BYPASS let you set to OFF the effect on the fly, using the TRIG too
 ------ TEST guitar samples from "mareproduction" in https://freesound.org
+
 -------------------------------
 # DYNAMO (stereo compressor - expander - hard limiter - ducking device)
 	0.6.11
@@ -1340,6 +1380,7 @@ ADD WALLED mode to ducking: if WALLED is ON, if the compression is reversed beco
 increased resolution for meters
 ---- removed useless and distracting RMS meter (too much movement)
 changed curves to present from -30 dB on
+
 -------------------------------
 # STRUMMER
 	0.6.12
@@ -1352,6 +1393,7 @@ changed curves to present from -30 dB on
 ------ STRUM GLOBAL TRIG / TAP / TRIG OUT the main strum trig
 ------ 6 channel of strumming, hit directly to have strumming with less trigs
 -------- for example if you wan to strum just 4 5 and 6, set to DOWN, and TAP on 4
+
 -------------------------------
 # AUTO(X)FADER
 	0.6.12
@@ -1377,6 +1419,7 @@ changed curves to present from -30 dB on
 	0.6.13
 timing corrected onSampleRate change
 ---- fade in fade out will use current level (if hit in the middle of a transition)
+
 -------------------------------
 # metaAARDVARK
 	0.6.14
@@ -1391,6 +1434,7 @@ timing corrected onSampleRate change
 ---- STEPPED = (SAMPLED VALUE * INNER GAIN) + INNER OFFSET
 ---- SMOOTHED = PORTAMENTO(STEPPED)
 ---- PULSE = STEPPED > COMPARATOR ? PULSE OUT : NOTHING;
+
 ----
 ------ PARAMETERS
 -------- SECTION 1: CLOCK OUT
@@ -1432,6 +1476,7 @@ clamping portamento also if no modulations are in
 
 	0.6.26
 BUG: wrong behaviour of the smooth output when opening a patch
+
 -------------------------------
 # JOOPER
 	0.6.15
@@ -1461,6 +1506,7 @@ BUG: wrong behaviour of the smooth output when opening a patch
 ------- SCENE MANAGER
 --------- Let you save status in a memory and reuse during the execution of the sequence
 --------- COMMANDS and DISPLAYs are are
+
 ---------
 --------- GREEN display, total of available scenes
 --------- RED display, draggable to select current scene
@@ -1489,6 +1535,7 @@ mode is reset only if OPTION/WINDOWS Key is donw
 	0.6.31
 ---- bug: reset was not correctly resetting if in DUAL EXCLUSIVE MODE
 ---- Add titles for scenes
+
 -------------------------------
 # CLOCKABLEDELAY
 	0.6.16
@@ -1537,6 +1584,7 @@ add an hard limiter (max voltages -20 to +20 after feedback)
 
 	0.6.20
 time computer sample rate update
+
 -------------------------------
 # 4HANDS
 	0.6.18
@@ -1553,10 +1601,12 @@ time computer sample rate update
 ------ DRAGDISPLAY to edit memory voltage, from -10v to +10v
 ------ PORTA(mento) to have portamento between 0 and 100 secs
 ------ OUT to output voltages
+
 ----
 ---- GLOBAL CONTROLS
 ------ ENABLE INs to enable overriding inner memory with incoming voltages
 ------ RESET to reset all current values to 0v and 0 portamento
+
 ----
 ---- SCENE MANAGER CONTROLS
 ------ DRAGDISPLAY to set and check current to be loaded scene
@@ -1590,6 +1640,7 @@ add PORTA GLOBAL control (from 0 to 1.), default value to 1. (to be backward com
 # Funny UNNYSTHIPLEASURESGRAPHER
 	0.6.19
 ---- waterfall freq display
+
 -------------------------------
 # 4MIX 8MIX 16MIX
 	0.6.19
@@ -1650,6 +1701,7 @@ add PORTA GLOBAL control (from 0 to 1.), default value to 1. (to be backward com
 ---- AUDIO CV IN combined with AUDIO CV OUT it's gate activated when the button
     is in GATE mode
 ---- GATE OUT: when the BTN is in GATE MODE and BTN is pressed outputs 10v
+
 -------------------------------
 # BIGNUMBER
 	0.6.22
@@ -1673,6 +1725,7 @@ add PORTA GLOBAL control (from 0 to 1.), default value to 1. (to be backward com
 	0.6.39
 feature request: added a contextual menu "PULSE IN DECREMENT MODE" (on - off)
 - now can go in DECREMENT mode
+
 -------------------------------
 # OP or µOPERATOR
 	0.6.25
@@ -1712,6 +1765,7 @@ To regain ownership of the frequency, just move the TUNE pot
 
 	0.6.31
 ---- added missing LEGENDA parts in the contextual menu
+
 -------------------------------
 # M1 or µMIXER
 1 stereo, 3 channels
@@ -1729,6 +1783,7 @@ To regain ownership of the frequency, just move the TUNE pot
 ---- OUTPUT LEFT + OUTPUT RIGHT
 -- contextual menu
 ---- via contextual menu can be set in exponential mode
+
 -------------------------------
 # M2 or µMIXER
 4 channels (CV aware)
@@ -1746,6 +1801,7 @@ To regain ownership of the frequency, just move the TUNE pot
 ---- OUTPUT
 -- contextual menu
 ---- via contextual menu can be set in exponential mode
+
 -------------------------------
 # EN or µENVELOPE
 AR or ADSR envelope
@@ -1774,6 +1830,7 @@ BUG: LVL now is valid as offset of the envelope also when in idle/off mode
 ---- added contextual menu "ENVELOPE to ZERO when TRIGGED"
     when on, every time the ADSR/AR is trigged/gated, the value goes immediatly to ZERO
 (more punchy when in FAST mode ;)
+
 -------------------------------
 # SQ1 or µSEQUENCER1
 16 steps analog style sequencer
@@ -1795,6 +1852,7 @@ BUG: LVL now is valid as offset of the envelope also when in idle/off mode
 -- contextual menu
 ---- OCTAVE OFFSET command
 ---- SEQUENCER MODE command (NORMAL, REVERSE, PENDULUM 1, PENDULUM 2, RANDOM)
+
 -------------------------------
 # SQ2 or µSEQUENCER2
 pattern programmable sequencer
@@ -1929,6 +1987,7 @@ ENTER --> (stage added BIS, same note)
 ---- RELEASE (from 0 to 100 secs)
 ---- BYPASS TAP ad BYPASS TRIG
 ---- IN and OUT signal
+
 -------------------------------
 # DL or µDELAY
 	0.6.26
@@ -1943,6 +2002,7 @@ ENTER --> (stage added BIS, same note)
 ---- FB CV IN
 ---- MIX OUT and OUT (all left, original signal, all right effected delayed signal)
 ---- + show OF sreen to check the inner buffer...
+
 -------------------------------
 # WORMHOLIZER
 	0.6.26
@@ -1954,6 +2014,7 @@ ENTER --> (stage added BIS, same note)
 ----- SPATIALIZER (CV controllable) increase the spread in the space of WHs
 ----- TUNNELIZER (CV controllable) decrease/increase the density of the temporal events
 ----- DRYWETIZER set the control for the liver of the earth
+
 -------------------------------
 # CONVOLVZILLA
 	0.6.26
@@ -2010,6 +2071,7 @@ removed setting to 4096 size blocks (always clicking...)
 ---- if the RATCHET must be generated, will be with number of repetitions chosen in the range
     naturally if the MIN is 2 and MAX is 2, the result is ALWAYS 2 repetitions
 ---- PULSE OUT the RATCHETED PULSE
+
 -------------------------------
 # SEVEN SEAS
 	0.6.28
@@ -2061,6 +2123,7 @@ when last sample is hit, the record mode goes automatically OFF
 
 	0.6.31
 ---- removing clipping ends when importing arbitrary source files
+
 -------------------------------
 # BRIDGES
 	0.6.28
@@ -2085,6 +2148,7 @@ but is freezed to the last VALUE (can be exploited as Sample & Hold ;) )
 ---- Add single bridge RESET command TAP and TRIG
 ---- Add ONE SHOT MODE (if status changes, must be reset)
 ---- Add red LED to show if the ONE SHOT MODE was consumed (to be reset)
+
 -------------------------------
 # BIVIO
 	0.6.28
@@ -2173,6 +2237,7 @@ and probability is at 5% means the only 1 times out of 20 (on average) the bivio
 
 	0.6.34
 ---- changed pulse out time from 0.1 msecs to 1 msec
+
 -------------------------------
 # JANNEKER TIMED
 	0.6.28
@@ -2199,6 +2264,7 @@ and probability is at 5% means the only 1 times out of 20 (on average) the bivio
 
 	0.6.34
 ---- changed pulse out time from 0.1 msecs to 1 msec
+
 -------------------------------
 # MAGISTER FUZZ
 	0.6.28
@@ -2241,6 +2307,7 @@ and probability is at 5% means the only 1 times out of 20 (on average) the bivio
 
 	0.6.37
 ---- improved memory mode for low memory situation/pressure on win
+
 -------------------------------
 # MONORECORDER
 	0.6.28
@@ -2269,6 +2336,7 @@ will be used next recording time.
 
 	0.6.37
 ---- improved memory mode for low memory situation/pressure on win
+
 -------------------------------
 # RXG100ChanB
 	0.6.28
@@ -2282,6 +2350,7 @@ will be used next recording time.
 
 	0.6.37
 ---- improved memory mode for low memory situation/pressure on win
+
 -------------------------------
 # CONFUSINGSIMPLER
 	0.6.23
@@ -2409,6 +2478,7 @@ BUG: activated again the ANTICLICK on slices
 
 	0.6.30
 ---- crash when moving from win to mac
+
 -------------------------------
 # SAM
 	0.6.31
@@ -2433,6 +2503,7 @@ manuals are here http://www.apple-iigs.info/newdoc/sam.pdf
 
 	0.6.36
 ---- add an limit to the sample/voice rebuilder
+
 -------------------------------
 # ASR16/8/4
 	0.6.31
@@ -2471,6 +2542,7 @@ and value is presented to the GLOBAL UNITY MIX ENV OUT output
 ---- global VCA in (simple vca connected to the unity mix envelopes)
 ---- global VCA out (simple vca connected to the unity mix envelopes)
 ---- global ENV OUT output of unity mix
+
 -------------------------------
 # LOGAN
 	0.6.32
@@ -2485,11 +2557,13 @@ and value is presented to the GLOBAL UNITY MIX ENV OUT output
 ---- a contextual menu will let you choose the granularity of the saving
 ----- every sample, every 10 samples, every 100 samples, every 1000 samples, every 10000 samples
 ---- if LOG on TRIG input is occupied, saves will happen every time a PULSE is received
+
 -------------------------------
 # LOGAN20
 	0.6.32
 ---- same as LOGAN but with 20 values
 ---- to be more compatible with 4Hands
+
 -------------------------------
 # 02NAGOL
 	0.6.32
@@ -2510,10 +2584,12 @@ with correct timing expressed by the column MSECS
 ------ the formula for a single step TIME is
 APPLIED TIME = TIME_OF_THE_STEP * clamp(TIME_RATE + ABS(CV) * 0.2 * VCA, 0.01, 999)
 ---- added CV addressing a single CV can select one of the N steps of the NAGOL
+
 -------------------------------
 # BOH!NGLER
 	0.6.34
 ---- MAH !? Mistery module
+
 -------------------------------
 # DUAL PULSER
 	0.6.34
@@ -2542,6 +2618,7 @@ APPLIED TIME = TIME_OF_THE_STEP * clamp(TIME_RATE + ABS(CV) * 0.2 * VCA, 0.01, 9
 ---- PULSE IN (+TAP) is the clock IN input
 ---- PULSE OUT, is the PULSE OUT of the CURRENT STAGE, if the STAGE has the PULSEQ button ON
 ---- CV OUT is the output CV for the current stage
+
 -------------------------------
 # DUAL (208) ENVELOPE
 	0.6.35
@@ -2580,6 +2657,7 @@ time goes from 2 msecs to 10 secs
 ---- I've added also 3 Vactrol response models (activable using contextual menu)
 ---- the 3 response are always a little variations, every new istance will be little bit different
 ---- it's 2 times the section you have in the 208
+
 ----
 ---- PARAMETERS (for a single LPG)
 ---- red knobs selector for only VCA mode, VCA + LP mode, only LP mode
@@ -2613,6 +2691,7 @@ traversing from C1 to C7 octaves
 ---- DETECTED FREQ: is the dispaly for the detected frequency
 ---- DEVIATION: when in CALIBRATION ACTIVE MODE displays the deviation from the searched frequency
 ---- START CALIBRATION: is the button to start the CALIBRATION procedure
+
 ----
 ---- MAPPED PLAY MODE section
 ---- MAP IS AVAILBLE light, will be ON if a MAP is available in memory
