@@ -4,19 +4,23 @@ Author: John Hornik
 
 Last Updated: 2019/05/23
 
-Last Patch: 0.6.33
+Last Patch: 0.6.42
 
 
 ## Antonio Says
 
-
+<details>
+  <summary>Click to see the Changelog</summary>
+  
 ```
 0.4.0d
 
 dual delay from 0 to 2000 msecs
 
 both delays are CV controllable
+
 ```
+</details>
 
 ---
 ## Basics
@@ -39,12 +43,7 @@ Using non-square waves to modulate the TIME parameter turns 2D into a complex wa
 
 *2 Hz sine wave with 200 msec delay, modulated by 2 Hz triangle wave*
 
-
-
-
-
 ---
-
 
 ## Sample Patch
 
