@@ -12,6 +12,7 @@ Manual project for the [NYSTHI modules plugin](https://github.com/nysthi/nysthi)
 
 [THE NYSTHI BASICS!](pages/basics/basics.md)
 
+
 | **Clocks** | **Filters** | **Boolean Logic** | **Sequencers** |
 |---|---|---|---|
 | [MetaAardvark](pages/metaaardvark/metaaardvark.md) | [4DCB](pages/4dcb/4dcb.md) | [Logic](pages/logic/logic.md) | [Squonk](pages/squonk/squonk.md) |
@@ -21,6 +22,17 @@ Manual project for the [NYSTHI modules plugin](https://github.com/nysthi/nysthi)
 |---|---|---|---|
 | [Complex DelayAttackHoldDecay](pages/complex_dahd/complex_dahd.md) | [NYECHOecoeco](pages/nyechoecoeco/nyechoecoeco.md) - WIP | [BigNumber](pages/bignumber/bignumber.md) - WIP | [Nysthiometer](pages/nysthiometer/nysthiometer.md) |
 
-WIP = Work In Progress
+Adi Quinn's winning **BOH!NGLER** Manual (as judged by the VCV Rack Official User Group on Facebook:
+https://www.dropbox.com/sh/p2qpsetlogyrgrg/AABscyee4Tu6VQD9W0pL_PIua/BOHINGLER_manual.pdf?dl=0
 
-Last updated 2019-02-13 (0.6.39)
+---
+## Changelog
+Here's the changelog organized on a per-module basis: 
+
+**[v0.6.42 organized changelog](./changelog0.6.42_parsed.md)**
+
+Search the module name (Control-F) for a basic rundown of features!
+
+**UPDATE** All modules can now be bookmarked (or whatever your browser calls it)! Hover over the module name, and then a LINK icon will show up to the left of it!
+
+Last updated 2019-05-21

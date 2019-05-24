@@ -30,8 +30,7 @@ Both the Standard and Buchla variants are included.
 
 **Pulse/Trigger**: A +10 V signal, typically with a duration of 1 ms (older modules with the 0.1 ms duration are being updated) 
 
-**Sync**: A special-purpose Trigger for the μ-series Sequencers.
-
+**Sync**: A special-purpose Trigger sometimes used as a reset (as in LFOMULTIPHASE) as well as the μ Series modules.
 
 ---
 
@@ -45,6 +44,4 @@ Both the Standard and Buchla variants are included.
 
 ---
 
-## anything else we need?
-
-
+## anything else we need? [LET US KNOW!](https://github.com/patman023/nysthimanual/issues)
