@@ -4,10 +4,11 @@ Author: John Hornik
 
 Last Updated: 2019/05/23
 
-Last Patch: 0.6.33
+Last Patch: 0.6.42
 
 ## Antonio Says
-
+<details>
+  <summary>Click to see the Changelog</summary>
 ```
 XATTO TIME (4 delays)
 	0.5.13.0
@@ -29,6 +30,7 @@ corrected value skewing when dragging and the screen is zoomed
 	0.6.20
 time computer sample rate update
 ```
+</details>
 
 ---
 
@@ -49,8 +51,6 @@ The Red Display is click-and-drag to change the delay time - range is 0.01 to 99
 *The first scope shows a 2hz sine wave delayed by a double-time clock pulse. The second scope shows the same sine attenuated at IN2 and delayed by a triplet clock pulse.*
 
 ---
-
-
 
 ## Sample Patch
 
