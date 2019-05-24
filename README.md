@@ -12,14 +12,15 @@ Manual project for the [NYSTHI modules plugin](https://github.com/nysthi/nysthi)
 
 [THE NYSTHI BASICS!](pages/basics/basics.md)
 
-| **Clocks** | **Filters** | **Boolean Logic** |
-|---|---|---|
-| [MetaAardvark](pages/metaaardvark/metaaardvark.md) | [4DCB](pages/4dcb/4dcb.md) | [Logic](pages/logic/logic.md) |
-|  | [Dica 33](pages/dica_33/dica_33.md) |  |
 
-| **Sequencers** | **Envelopes** | **Delays** |
-|---|---|---|
-| [Squonk](pages/squonk/squonk.md) | [Complex DelayAttackHoldDecay](pages/complex_dahd/complex_dahd.md) | [NYECHOecoeco](pages/nyechoecoeco/nyechoecoeco.md) - Work In Progress |
+| **Clocks** | **Filters** | **Boolean Logic** | **Sequencers** |
+|---|---|---|---|
+| [MetaAardvark](pages/metaaardvark/metaaardvark.md) | [4DCB](pages/4dcb/4dcb.md) | [Logic](pages/logic/logic.md) | [Squonk](pages/squonk/squonk.md) |
+|  | [Dica 33](pages/dica_33/dica_33.md) |  |  |
+
+| **Envelopes** | **Delays** | **Utilities** | **Blanks** |
+|---|---|---|---|
+| [Complex DelayAttackHoldDecay](pages/complex_dahd/complex_dahd.md) | [NYECHOecoeco](pages/nyechoecoeco/nyechoecoeco.md) - WIP | [BigNumber](pages/bignumber/bignumber.md) - WIP | [Nysthiometer](pages/nysthiometer/nysthiometer.md) |
 
 Adi Quinn's winning **BOH!NGLER** Manual (as judged by the VCV Rack Official User Group on Facebook:
 https://www.dropbox.com/sh/p2qpsetlogyrgrg/AABscyee4Tu6VQD9W0pL_PIua/BOHINGLER_manual.pdf?dl=0
