@@ -21,8 +21,11 @@ Manual project for the [NYSTHI modules plugin](https://github.com/nysthi/nysthi)
 | **Envelopes** | **Delays** | **Utilities** | **Blanks** |
 |---|---|---|---|
 | [Complex DelayAttackHoldDecay](pages/complex_dahd/complex_dahd.md) | [NYECHOecoeco](pages/nyechoecoeco/nyechoecoeco.md) - WIP | [BigNumber](pages/bignumber/bignumber.md) - WIP | [Nysthiometer](pages/nysthiometer/nysthiometer.md) |
+|  | [Dual Signal Delayer](pages/dualsignaldelayer/dualsignaldelayer.md) |  |  |
+|  | [Xatto Time](pages/xatto_time/xatto_time.md) |  |  |
 
-Adi Quinn's winning **BOH!NGLER** Manual (as judged by the VCV Rack Official User Group on Facebook:
+- [The amazing combo of Jooper and Janneker (+Timed)](pages/jooperjannekertimed/Jooper-Janneker-Janneker_timed.pdf)
+- Adi Quinn's winning **BOH!NGLER** Manual (as judged by the VCV Rack Official User Group on Facebook:
 https://www.dropbox.com/sh/p2qpsetlogyrgrg/AABscyee4Tu6VQD9W0pL_PIua/BOHINGLER_manual.pdf?dl=0
 
 ---
