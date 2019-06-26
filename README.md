@@ -26,10 +26,13 @@ Manual project for the [NYSTHI modules plugin](https://github.com/nysthi/nysthi)
 | [Model277](pages/model277/model277.md) |  |  |  |
 | [Dual Feedback Echo](pages/dualfeedbackecho/dualfeedbackecho.md) |  |  |  |
 
-- [The amazing combo of **Jooper and Janneker (+JannekerTimed)**](pages/jooperjannekertimed/) 
-  - (Github hates Firefox, so blame them if the PDF doesn't work for you ;-) 
-- Adi Quinn's winning **BOH!NGLER** Manual (as judged by the VCV Rack Official User Group on Facebook:
-https://www.dropbox.com/sh/p2qpsetlogyrgrg/AABscyee4Tu6VQD9W0pL_PIua/BOHINGLER_manual.pdf?dl=0
+### PDFs
+Github hates Firefox, so blame them if the PDFs don't work for you ;-)
+
+- [The amazing combo of **Jooper and Janneker (+JannekerTimed)**](pages/jooperjannekertimed/)
+- [Bivio & Bridges Utilities](pages/biviobridges/)
+- [Adi Quinn's winning **BOH!NGLER** Manual (judged by the VCV Rack Official User Group on Facebook)](pages/bohingler/)
+
 
 ---
 ## Changelog
