@@ -33,10 +33,10 @@ https://www.dropbox.com/sh/p2qpsetlogyrgrg/AABscyee4Tu6VQD9W0pL_PIua/BOHINGLER_m
 ## Changelog
 Here's the changelog organized on a per-module basis: 
 
-**[v0.6.42 organized changelog](./changelog0.6.42_parsed.md)**
+**[v1.0.1 organized changelog](./changelog1.0.1_parsed.md)**
 
 Search the module name (Control-F) for a basic rundown of features!
 
 **UPDATE** All modules can now be bookmarked (or whatever your browser calls it)! Hover over the module name, and then a LINK icon will show up to the left of it!
 
-Last updated 2019-05-21
+Last updated 2019-06-26
