@@ -18,13 +18,15 @@ Manual project for the [NYSTHI modules plugin](https://github.com/nysthi/nysthi)
 | [MetaAardvark](pages/metaaardvark/metaaardvark.md) | [4DCB](pages/4dcb/4dcb.md) | [Logic](pages/logic/logic.md) | [Squonk](pages/squonk/squonk.md) |
 |  | [Dica 33](pages/dica_33/dica_33.md) |  |  |
 
-| **Envelopes** | **Delays** | **Utilities** | **Blanks** |
+| **Delays** | **Envelopes** | **Utilities** | **Blanks** |
 |---|---|---|---|
-| [Complex DelayAttackHoldDecay](pages/complex_dahd/complex_dahd.md) | [NYECHOecoeco](pages/nyechoecoeco/nyechoecoeco.md) - WIP | [BigNumber](pages/bignumber/bignumber.md) - WIP | [Nysthiometer](pages/nysthiometer/nysthiometer.md) |
-|  | [Dual Signal Delayer](pages/dualsignaldelayer/dualsignaldelayer.md) |  |  |
-|  | [Xatto Time](pages/xatto_time/xatto_time.md) |  |  |
+| [NYECHOecoeco](pages/nyechoecoeco/nyechoecoeco.md) - WIP | [Complex DelayAttackHoldDecay](pages/complex_dahd/complex_dahd.md) | [BigNumber](pages/bignumber/bignumber.md) - WIP | [Nysthiometer](pages/nysthiometer/nysthiometer.md) |
+| [Dual Signal Delayer](pages/dualsignaldelayer/dualsignaldelayer.md) |  |  |  |
+| [Xatto Time](pages/xatto_time/xatto_time.md) |  |  |  |
+| [Model277](pages/model277/model277.md) |  |  |  |
+| [Dual Feedback Echo](pages/dualfeedbackecho/dualfeedbackecho.md) |  |  |  |
 
-- [The amazing combo of Jooper and Janneker (+Timed)](pages/jooperjannekertimed/) 
+- [The amazing combo of **Jooper and Janneker (+JannekerTimed)**](pages/jooperjannekertimed/) 
   - (Github hates Firefox, so blame them if the PDF doesn't work for you ;-) 
 - Adi Quinn's winning **BOH!NGLER** Manual (as judged by the VCV Rack Official User Group on Facebook:
 https://www.dropbox.com/sh/p2qpsetlogyrgrg/AABscyee4Tu6VQD9W0pL_PIua/BOHINGLER_manual.pdf?dl=0

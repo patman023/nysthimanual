@@ -36,7 +36,7 @@
         },
         {
           "paramId": 1,
-          "value": -0.733874202
+          "value": -0.715874255
         },
         {
           "paramId": 2,
@@ -81,7 +81,7 @@
         "lowCpu": false
       },
       "pos": [
-        30,
+        23,
         0
       ]
     },
@@ -100,7 +100,7 @@
         },
         {
           "paramId": 1,
-          "value": -0.296252221
+          "value": -0.638252974
         },
         {
           "paramId": 2,
@@ -108,7 +108,7 @@
         },
         {
           "paramId": 3,
-          "value": 0.297499835
+          "value": 0.301999748
         },
         {
           "paramId": 4,
@@ -145,7 +145,7 @@
         "lowCpu": false
       },
       "pos": [
-        46,
+        39,
         0
       ]
     },
@@ -369,8 +369,8 @@
         }
       ],
       "data": {
-        "m_delay_msecs0": 172.199997,
-        "m_delay_msecs1": 172.199997,
+        "m_delay_msecs0": 172.600006,
+        "m_delay_msecs1": 172.600006,
         "m_delay_msecs2": 100.0,
         "m_delay_msecs3": 100.0,
         "m_delay_trigged_multiplier0": 1,
@@ -379,7 +379,7 @@
         "m_delay_trigged_multiplier3": 1
       },
       "pos": [
-        62,
+        55,
         0
       ]
     },
@@ -406,9 +406,9 @@
         }
       ],
       "data": {
-        "m_delay_msecs0": 86.3000031,
-        "m_delay_msecs1": 335.5,
-        "m_delay_msecs2": 336.700012,
+        "m_delay_msecs0": 86.4000015,
+        "m_delay_msecs1": 336.399994,
+        "m_delay_msecs2": 336.399994,
         "m_delay_msecs3": 100.0,
         "m_delay_trigged_multiplier0": 1,
         "m_delay_trigged_multiplier1": 2,
@@ -513,7 +513,42 @@
         "resetClockOutputsHigh": false
       },
       "pos": [
-        10,
+        3,
+        0
+      ]
+    },
+    {
+      "plugin": "NYSTHI",
+      "version": "0.6.42",
+      "model": "ClockMultiplier",
+      "params": [
+        {
+          "paramId": 0,
+          "value": 0.0
+        },
+        {
+          "paramId": 3,
+          "value": 0.0
+        },
+        {
+          "paramId": 2,
+          "value": 0.0
+        },
+        {
+          "paramId": 1,
+          "value": 0.0
+        }
+      ],
+      "data": {
+        "m_multiplier_values0": 0.5,
+        "m_multiplier_values1": 2.0,
+        "m_multiplier_values2": 3.0,
+        "m_divmode": true,
+        "m_no_clockout_if_no_clockin": false,
+        "m_active_mode": true
+      },
+      "pos": [
+        62,
         0
       ]
     }
@@ -651,6 +686,20 @@
       "outputId": 3,
       "inputModuleId": 5,
       "inputId": 12
+    },
+    {
+      "color": "#c9b70e",
+      "outputModuleId": 6,
+      "outputId": 3,
+      "inputModuleId": 7,
+      "inputId": 0
+    },
+    {
+      "color": "#c91847",
+      "outputModuleId": 7,
+      "outputId": 0,
+      "inputModuleId": 5,
+      "inputId": 10
     }
   ]
 }

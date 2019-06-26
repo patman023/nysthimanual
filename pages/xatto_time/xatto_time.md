@@ -1,15 +1,16 @@
 # Xatto Time
----
-Author: John Hornik
 
-Last Updated: 2019/05/23
+![](./xatto_time.png)
 
-Last Patch: 0.6.42
+Type: Delay
+
+Size: 7 HP
 
 ## Antonio Says
+
 <details>
   <summary>Click to see the Changelog</summary>
-	
+
 ```
 XATTO TIME (4 delays)
 	0.5.13.0
@@ -31,32 +32,36 @@ corrected value skewing when dragging and the screen is zoomed
 	0.6.20
 time computer sample rate update
 ```
+
 </details>
 
 ---
 
 ## Basics
 
-![Xatto Time](./xatto_time.png)
-
-Type: Delay
-
-Size: 7 HP
-
 Xatto Time is four clockable signal delays. Signal connects to IN or IN2 - IN2 has an attenuverter to control the depth of the input signal, otherwise they are the same. OUT is the delayed output. 
 
 The Red Display is click-and-drag to change the delay time - range is 0.01 to 9999.99 msecs, default is 100 msecs. A signal input at CLOCK matches the delay time to that clock, and can be multiplied by a factor of 1 to 99, adjustable by the click-and-drag Red Display to it's right.
 
-![Sin delays](./xatto_sin_delay.png)
+![](./xatto_sin_delay.png)
 
-*The first scope shows a 2hz sine wave delayed by a double-time clock pulse. The second scope shows the same sine attenuated at IN2 and delayed by a triplet clock pulse.*
+*The first scope shows a sine wave delayed by a double-time clock pulse. The second scope shows the same sine attenuated at IN2 and delayed by a triplet clock pulse.*
 
 ---
+
+
 
 ## Sample Patch
 
 [xatto_sample.vcv](./xatto_sample.vcv) 
 
-![Xatto sample patch](./xatto_sample.png)
+![xatto sample](./xatto_sample.png)
 
 Cascading delays with Xatto Time. CLK3 sets the delays to triplet time. The second oscillator is triggered by a half-time clock and delayed by half a triplet to create an offset pattern twice as slow as the first.
+
+---
+Author: John Hornik
+
+Last Updated: 2019/05/27
+
+Last Patch: 0.6.33
