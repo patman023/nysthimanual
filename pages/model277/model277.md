@@ -10,6 +10,9 @@ Modeled After/Inspired by: Buchla 277
 
 ## Antonio Says
 
+<details>
+  <summary>Click to see the Changelog</summary>
+
 ```
 	0.4.0
 a feedback delay tool, freely inspired from Buchla 277
@@ -24,6 +27,8 @@ solved a bug on feeback paths 3 and 4
 	0.6.2
 protect from init to time ZERO
 ```
+
+</details>
 
 ---
 

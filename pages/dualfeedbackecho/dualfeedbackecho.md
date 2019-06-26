@@ -8,6 +8,9 @@ Size: 2 HP
 
 ## Antonio Says
 
+<details>
+  <summary>Click to see the Changelog</summary>
+
 ```
 0.5.11.0
 2 echos almost the same, the only differences are minimum maximum time
@@ -22,6 +25,8 @@ FEEDBACK is amount of the ECHO that is summed back to top of the CHAIN
 OUT is the OUT...
 
 ```
+
+</details>
 
 ---
 

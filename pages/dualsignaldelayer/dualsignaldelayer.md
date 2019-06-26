@@ -8,6 +8,9 @@ Size: 2 HP
 
 ## Antonio Says
 
+<details>
+  <summary>Click to see the Changelog</summary>
+
 ```
 0.4.0d
 
@@ -15,6 +18,8 @@ dual delay from 0 to 2000 msecs
 
 both delays are CV controllable
 ```
+
+</details>
 
 ---
 ## Basics
